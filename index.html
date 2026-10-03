@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Independent bilingual TA English essay practice: study first, 60-minute writing, private drafts and export for feedback.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f6f4ed">
+  <title>TA 寫作練習室 · TA Writing Lab</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">跳到主要內容</a>
+  <header class="site-header">
+    <a class="brand" href="#study" aria-label="TA Writing Lab"><span class="brand-mark" aria-hidden="true">TA<span>／</span></span><span data-i18n="brand">TA 寫作練習室</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#study" data-view="study" data-i18n="study">先溫習</a>
+      <a href="#practice" data-view="practice" data-i18n="practice">寫作練習</a>
+      <a href="#models" data-view="models" data-i18n="models">範文參考</a>
+      <a href="#grading" data-view="grading" data-i18n="grading">評分與進步</a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <p id="loading" role="status" data-i18n="loading">正在準備練習內容…</p>
+    <section id="study" class="view" hidden></section>
+    <section id="practice" class="view" hidden></section>
+    <section id="models" class="view" hidden></section>
+    <section id="grading" class="view" hidden></section>
+    <noscript><p>互動寫作需要JavaScript。You need JavaScript for interactive writing. <a href="./practice.pdf">下載練習PDF / Download practice PDF</a></p></noscript>
+  </main>
+  <footer class="site-footer"><p data-i18n="footer">獨立TA寫作練習｜暫定2026年10月5日23:00香港時間下線｜原始碼保留</p><a href="./practice.pdf" download data-i18n="pdf">下載完整練習PDF</a></footer>
+  <dialog id="submission-dialog" aria-labelledby="submission-title">
+    <div class="dialog-top"><span class="eyebrow">TA / SUBMISSION</span><button type="button" id="dialog-close" class="close-button" data-i18n="close">關閉</button></div>
+    <h2 id="submission-title" data-i18n="submissionTitle">作文準備好，下一步傳給阿福。</h2>
+    <p data-i18n="submissionNote"></p>
+    <p id="submission-summary" class="submission-summary"></p>
+    <div class="button-row"><button type="button" class="button primary" id="dialog-download" data-i18n="download">下載交卷檔</button><button type="button" class="button secondary" id="dialog-copy" data-i18n="copy">複製交卷內容</button></div>
+    <p id="delivery-status" role="status" class="small muted"></p>
+    <button type="button" class="text-button" id="continue-editing" data-i18n="continueEditing">返回修改</button>
+    <p class="small muted" data-i18n="submissionSaved"></p>
+  </dialog>
+</body>
+</html>

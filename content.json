@@ -1,0 +1,734 @@
+{
+  "version": "1.0.0",
+  "rubricVersion": "ta-practice-v1",
+  "durationSeconds": 3600,
+  "targetWords": 500,
+  "passMark": 70,
+  "expiry": "2026-10-05T15:00:00Z",
+  "ui": {
+    "brand": {
+      "zh": "TA 寫作練習室",
+      "en": "TA Writing Lab"
+    },
+    "tagline": {
+      "zh": "先讀懂，再寫清楚。",
+      "en": "Understand first. Write with purpose."
+    },
+    "study": {
+      "zh": "先溫習",
+      "en": "Study first"
+    },
+    "practice": {
+      "zh": "寫作練習",
+      "en": "Practice"
+    },
+    "models": {
+      "zh": "範文參考",
+      "en": "Sample essays"
+    },
+    "grading": {
+      "zh": "評分與進步",
+      "en": "Marking & progress"
+    },
+    "unofficial": {
+      "zh": "非官方考前練習",
+      "en": "Independent exam practice"
+    },
+    "minutes": {
+      "zh": "分鐘",
+      "en": "minutes"
+    },
+    "words": {
+      "zh": "目標字數",
+      "en": "target words"
+    },
+    "pass": {
+      "zh": "練習合格線",
+      "en": "practice pass mark"
+    },
+    "studyTitle": {
+      "zh": "把觀點寫清楚。",
+      "en": "Make your argument count."
+    },
+    "studyLead": {
+      "zh": "先用這一頁溫習：看懂題目、展開兩個理由、回應反方。準備好，再做一篇60分鐘英文議論文。",
+      "en": "Use this page to review task response, two developed arguments and a fair counterargument. Then write one English argumentative essay in 60 minutes."
+    },
+    "startPractice": {
+      "zh": "準備好，開始寫作",
+      "en": "Ready to practise"
+    },
+    "viewModels": {
+      "zh": "先看示範拆解",
+      "en": "Explore the examples"
+    },
+    "lessonTitle": {
+      "zh": "作文之前，先掌握六件事",
+      "en": "Six things to review before writing"
+    },
+    "officialTitle": {
+      "zh": "官方材料：學方法，不照搬考制",
+      "en": "Official material: learn the craft, not another exam format"
+    },
+    "officialNote": {
+      "zh": "未找到公開的TA官方範文或詳細評分表。以下考評局答卷及描述是另一個香港考試的官方材料；練習題、原創示範、分數權重與70分門檻均非TA官方。",
+      "en": "No public TA model answer or detailed marking scheme was found. The HKEAA scripts and descriptors belong to a different Hong Kong examination. Practice questions, original examples, score weights and the 70-point threshold are not official TA materials."
+    },
+    "sourcesTitle": {
+      "zh": "香港時事及官方來源",
+      "en": "Hong Kong context & official sources"
+    },
+    "openSource": {
+      "zh": "開啟官方原文 ↗",
+      "en": "Open official source ↗"
+    },
+    "warmupTitle": {
+      "zh": "先練提綱，不急住寫全文",
+      "en": "Warm up with an outline"
+    },
+    "warmupLead": {
+      "zh": "選一題，寫下立場、兩個理由及最強反方。提綱只存於此瀏覽器，也會在寫作頁保留。",
+      "en": "Choose a question. Note your position, two reasons and the strongest objection. Your outline stays in this browser and appears in the writing workspace."
+    },
+    "selectTopic": {
+      "zh": "選擇練習題",
+      "en": "Choose a practice question"
+    },
+    "stance": {
+      "zh": "我的立場與條件",
+      "en": "My position & condition"
+    },
+    "reason1": {
+      "zh": "理由一：原因與例子",
+      "en": "Reason 1: mechanism & example"
+    },
+    "reason2": {
+      "zh": "理由二：另一個角度",
+      "en": "Reason 2: a different angle"
+    },
+    "counter": {
+      "zh": "最強反方與我的回應",
+      "en": "Strongest objection & response"
+    },
+    "planPlaceholder": {
+      "zh": "可先用中／英文列點；正文必須是英文。",
+      "en": "Notes may be in either language; write the essay in English."
+    },
+    "practiceTitle": {
+      "zh": "一個鐘，完成一篇論證。",
+      "en": "One hour. One clear argument."
+    },
+    "practiceLead": {
+      "zh": "約500個英文詞。字數及時限按考生提供設定；考場要求以邀請信與試卷為準。六題均為原創練習，並非押題或歷屆試題。",
+      "en": "Aim for about 500 English words. Time and length follow the candidate-provided format; the actual examination instructions take priority. All six questions are original practice, not predictions or past papers."
+    },
+    "questionLabel": {
+      "zh": "英文題目",
+      "en": "English question"
+    },
+    "translationLabel": {
+      "zh": "中文題意（理解輔助）",
+      "en": "Chinese prompt translation"
+    },
+    "essayLabel": {
+      "zh": "你的英文作文",
+      "en": "Your English essay"
+    },
+    "essayPlaceholder": {
+      "zh": "先落清楚立場，再逐段展開。開始寫作前可先按「開始計時」。",
+      "en": "Begin with a clear position, then develop each argument. Start the timer when you are ready."
+    },
+    "saved": {
+      "zh": "已存於此瀏覽器",
+      "en": "Saved in this browser"
+    },
+    "saving": {
+      "zh": "正在保存…",
+      "en": "Saving…"
+    },
+    "saveError": {
+      "zh": "瀏覽器未能保存，請下載備份。",
+      "en": "Browser storage is unavailable. Download a backup."
+    },
+    "wordHint": {
+      "zh": "只計英文詞；連字符及縮寫視為一詞。字數不會決定分數。",
+      "en": "English words; hyphenated words and contractions count as one. Word count does not determine your mark."
+    },
+    "timerTitle": {
+      "zh": "限時寫作",
+      "en": "Timed writing"
+    },
+    "start": {
+      "zh": "開始計時",
+      "en": "Start timer"
+    },
+    "resume": {
+      "zh": "繼續計時",
+      "en": "Resume"
+    },
+    "pause": {
+      "zh": "暫停",
+      "en": "Pause"
+    },
+    "ready": {
+      "zh": "準備中",
+      "en": "Ready"
+    },
+    "running": {
+      "zh": "計時中",
+      "en": "Running"
+    },
+    "paused": {
+      "zh": "已暫停",
+      "en": "Paused"
+    },
+    "finished": {
+      "zh": "已完成",
+      "en": "Finished"
+    },
+    "expired": {
+      "zh": "時間已到，作文已保留",
+      "en": "Time is up. Your essay is preserved."
+    },
+    "finish": {
+      "zh": "完成並交卷",
+      "en": "Finish & prepare submission"
+    },
+    "download": {
+      "zh": "下載交卷檔",
+      "en": "Download submission"
+    },
+    "copy": {
+      "zh": "複製交卷內容",
+      "en": "Copy submission"
+    },
+    "copied": {
+      "zh": "已複製，請回Telegram貼上。",
+      "en": "Copied. Paste it into the Telegram conversation."
+    },
+    "copyFailed": {
+      "zh": "無法自動複製；請下載檔案。",
+      "en": "Clipboard is unavailable. Download the file instead."
+    },
+    "downloaded": {
+      "zh": "已準備下載；仍需回Telegram傳送。",
+      "en": "Download prepared. You still need to send it in Telegram."
+    },
+    "reset": {
+      "zh": "重設這題計時",
+      "en": "Reset this timer"
+    },
+    "resetConfirm": {
+      "zh": "只重設本題計時，不會清除作文或提綱。是否繼續？",
+      "en": "Reset this timer only? Your essay and outline will be kept."
+    },
+    "spellcheck": {
+      "zh": "開啟拼字提示（非考試模式）",
+      "en": "Enable spellcheck (not exam mode)"
+    },
+    "planInPractice": {
+      "zh": "查看已存提綱",
+      "en": "View saved outline"
+    },
+    "noOutline": {
+      "zh": "還未列提綱；可以先返回溫習頁。",
+      "en": "No outline yet. You can prepare one on the study page."
+    },
+    "timePlanTitle": {
+      "zh": "時間分配",
+      "en": "Time plan"
+    },
+    "timePlan": {
+      "zh": "0–5分鐘讀題｜5–10分鐘提綱｜10–50分鐘正文｜50–60分鐘檢查",
+      "en": "0–5 read | 5–10 outline | 10–50 write | 50–60 check"
+    },
+    "privateNote": {
+      "zh": "作文不會自動傳送、公開或上傳GitHub。換裝置不會同步，請先下載。",
+      "en": "Your essay is not automatically sent, published or uploaded to GitHub. Devices do not sync; download before switching."
+    },
+    "modelTitle": {
+      "zh": "看論證，唔背全文。",
+      "en": "Study the argument. Do not memorise the essay."
+    },
+    "modelLead": {
+      "zh": "兩篇正文各500 words的原創示範，不是官方答案。英文是寫作參考；中文是理解導讀，不計作文詞數。",
+      "en": "Two original examples, each with a 500-word English body. They are not official answers. Chinese notes are comprehension aids and do not count towards the essay."
+    },
+    "position": {
+      "zh": "文章立場",
+      "en": "Position"
+    },
+    "analysis": {
+      "zh": "逐段拆解",
+      "en": "Paragraph commentary"
+    },
+    "translation": {
+      "zh": "查看中文理解導讀",
+      "en": "Read Chinese comprehension notes"
+    },
+    "officialSampleLink": {
+      "zh": "看考評局真實答卷 ↗",
+      "en": "View the HKEAA candidate script ↗"
+    },
+    "gradingTitle": {
+      "zh": "分數只是起點，下一篇要更好。",
+      "en": "Use the mark to improve the next essay."
+    },
+    "gradingLead": {
+      "zh": "交卷檔傳回Telegram對話後，阿福才會閱讀全文及評分。網站沒有自動評分，也不會因為寫滿500字就判合格。",
+      "en": "Afuu reads and marks the essay after the submission reaches the Telegram conversation. This site does not auto-grade, and reaching 500 words does not mean a pass."
+    },
+    "practiceThreshold": {
+      "zh": "70／100：你指定的練習合格線",
+      "en": "70/100: your selected practice pass threshold"
+    },
+    "rubricNote": {
+      "zh": "以下是我們的練習權重，參考官方寫作描述的三個面向。不是TA官方評分表，不等同DSE等級，也不保證真實考試及格。",
+      "en": "These are our practice weights, informed by the three areas in the official writing descriptors. They are not a TA marking scheme, do not map to DSE levels and cannot guarantee an actual exam pass."
+    },
+    "submitStepsTitle": {
+      "zh": "寫完點交俾阿福？",
+      "en": "How to send your essay to Afuu"
+    },
+    "submitStep1": {
+      "zh": "按「完成並交卷」，下載.txt交卷檔或複製交卷內容。",
+      "en": "Choose Finish & prepare submission, then download the .txt file or copy the submission."
+    },
+    "submitStep2": {
+      "zh": "回與阿福的Telegram對話傳檔或貼文；若你未能直接聯絡阿福，先傳給分享網站的人代交。",
+      "en": "Send the file or text in the Telegram conversation with Afuu. If you cannot contact Afuu directly, ask the person who shared the site to forward it."
+    },
+    "submitStep3": {
+      "zh": "阿福按同一份權重閱讀全文，回覆分項分數及具體修改。",
+      "en": "Afuu reads the full essay using this rubric and returns subscores and specific revisions."
+    },
+    "feedbackTitle": {
+      "zh": "你會收到的進步建議",
+      "en": "What the feedback will include"
+    },
+    "feedback": {
+      "zh": "總分與是否達70｜三項分數及扣分原因｜原句→修改句｜最重要三個改善點｜一段示範重寫｜下一次短練習。分數只反映這次練習，不是官方考試成績。",
+      "en": "Total and whether it reaches 70 | three subscores with reasons | original → revised sentences | three priority improvements | one rewritten paragraph | a short next exercise. This is practice feedback, not an official exam result."
+    },
+    "submissionTitle": {
+      "zh": "作文準備好，下一步傳給阿福。",
+      "en": "Your essay is ready. Send it to Afuu next."
+    },
+    "submissionNote": {
+      "zh": "還未傳送，也未評分。下載或複製後，回目前Telegram對話提交。檔案包括英文題目、正文、詞數及計時資料；沒有姓名或帳戶資料。",
+      "en": "Not sent or graded yet. Download or copy, then submit in the current Telegram conversation. The file contains the question, essay, word count and timing details, with no name or account information."
+    },
+    "continueEditing": {
+      "zh": "返回修改",
+      "en": "Continue editing"
+    },
+    "close": {
+      "zh": "關閉",
+      "en": "Close"
+    },
+    "submissionSaved": {
+      "zh": "作文仍在此瀏覽器保留。",
+      "en": "The essay remains saved in this browser."
+    },
+    "checklistTitle": {
+      "zh": "交卷前最後檢查",
+      "en": "Final check before submission"
+    },
+    "checklist": {
+      "zh": "有清楚立場？兩段不同理由？解釋了因果？回應合理反方？結論答返題目？沒有捏造數據？",
+      "en": "Clear position? Two different arguments? Explained mechanisms? A fair counterargument? A conclusion that answers the question? No invented data?"
+    },
+    "footer": {
+      "zh": "獨立TA寫作練習｜暫定2026年10月5日23:00香港時間下線｜原始碼保留",
+      "en": "Independent TA writing practice | Scheduled to go offline on 5 Oct 2026, 23:00 HKT | Source code retained"
+    },
+    "pdf": {
+      "zh": "下載完整練習PDF",
+      "en": "Download the complete practice PDF"
+    },
+    "loading": {
+      "zh": "正在準備練習內容…",
+      "en": "Preparing the practice material…"
+    },
+    "loadError": {
+      "zh": "內容未能載入，請重新整理；也可先下載PDF溫習。",
+      "en": "The material could not load. Refresh the page or use the practice PDF."
+    },
+    "skip": {
+      "zh": "跳到主要內容",
+      "en": "Skip to main content"
+    },
+    "unofficialLabel": {
+      "zh": "原創練習・非官方答案",
+      "en": "Original practice · not an official answer"
+    }
+  },
+  "questions": [
+    {
+      "id": "A",
+      "title": {
+        "zh": "AI與公共服務",
+        "en": "AI & public services"
+      },
+      "prompt": "Should the Hong Kong Government expand the use of artificial intelligence in public services? Discuss the benefits and risks, and give your own view. Write an argumentative essay of about 500 words.",
+      "translation": "香港政府應否擴大在公共服務中使用人工智能？討論好處與風險，並表明你的看法。"
+    },
+    {
+      "id": "B",
+      "title": {
+        "zh": "公共財政與民生",
+        "en": "Public finances & services"
+      },
+      "prompt": "\"To maintain fiscal sustainability, the Hong Kong Government should reduce spending on public services rather than increase taxes.\" To what extent do you agree? Write an argumentative essay of about 500 words.",
+      "translation": "為維持財政可持續，香港政府應削減公共服務開支，而非加稅。你同意到甚麼程度？"
+    },
+    {
+      "id": "C",
+      "title": {
+        "zh": "長者社區照顧",
+        "en": "Community elderly care"
+      },
+      "prompt": "Should Hong Kong place greater emphasis on community-based elderly care than residential care? Discuss both views and give your own opinion.",
+      "translation": "香港應否更重視社區長者照顧，而非院舍照顧？討論雙方並提出你的觀點。"
+    },
+    {
+      "id": "D",
+      "title": {
+        "zh": "數碼服務與共融",
+        "en": "Digital services & inclusion"
+      },
+      "prompt": "\"Digital government services should replace most face-to-face services.\" To what extent do you agree?",
+      "translation": "數碼政府服務應取代大部分面對面服務。你同意到甚麼程度？"
+    },
+    {
+      "id": "E",
+      "title": {
+        "zh": "資訊與表達自由",
+        "en": "Information & expression"
+      },
+      "prompt": "Should public authorities prioritise preventing online misinformation over protecting freedom of expression? Discuss the trade-offs and give your own view.",
+      "translation": "公共機構應否優先防止網上錯誤資訊，而非保護表達自由？討論取捨並表明你的看法。"
+    },
+    {
+      "id": "F",
+      "title": {
+        "zh": "即時需要與長期投資",
+        "en": "Immediate needs & investment"
+      },
+      "prompt": "\"Public money should be spent mainly on services with immediate benefits rather than long-term infrastructure.\" Do you agree?",
+      "translation": "公帑應主要用於有即時效益的服務，而非長期基建。你是否同意？"
+    }
+  ],
+  "models": [
+    {
+      "id": "A",
+      "title": {
+        "zh": "原創示範A",
+        "en": "Using AI in Public Services: Progress with Safeguards"
+      },
+      "heading": "Using AI in Public Services: Progress with Safeguards",
+      "paragraphs": [
+        "Artificial intelligence is increasingly relevant to the delivery of public services in Hong Kong. In August 2026, the Government announced AI projects to support the handling of enquiries and complaints through 1823. Such developments raise an important question: how far should public authorities rely on technology? I support a gradual expansion of AI, provided that efficiency is balanced with accountability, data protection and access for all residents.",
+        "The strongest argument for wider adoption is that AI can reduce repetitive work. Public officers often spend time recording enquiries, searching documents and preparing routine summaries. Tools that assist with these tasks may allow staff to devote more attention to complicated cases. For example, an AI system could summarise a complaint before an officer checks the details and contacts the resident. This would not eliminate professional judgement; instead, it would support it. However, departments should assess the overall cost, including procurement, maintenance and training. A project offers value for money only if its benefits exceed these costs and service quality is maintained. Clear responsibility for checking outputs is essential. If officers merely accept automated summaries without verification, apparent time savings could lead to complaints, rework and a decline in public confidence over time.",
+        "AI could also make services easier to use. Residents may struggle to identify the correct department or understand lengthy application instructions. A carefully designed assistant could explain procedures in plain language and direct users to relevant services. Nevertheless, digital convenience must not become a barrier. Older residents, people with disabilities and those without reliable internet access may still need personal assistance. Telephone and counter services should therefore remain available. Staff should also be trained to explain how automated tools are used, so that residents can make informed choices rather than feel forced to accept an unfamiliar system.",
+        "Critics rightly warn that AI can produce inaccurate answers or treat similar cases inconsistently. Public services also involve sensitive personal information, making a data breach particularly serious. These concerns justify strong safeguards, but not a complete rejection of the technology. Departments should begin with relatively low-risk tasks, restrict access to personal data and test systems before wider deployment. Decisions affecting a person's eligibility for assistance should remain subject to meaningful human review. Residents should have a clear route to challenge errors. Regular independent assessments would help identify weaknesses and ensure that responsibility remains with the department rather than being shifted to a software supplier. Departments should publish understandable evaluation results, including error rates and service improvements, before scaling up projects. This transparency would enable residents to judge whether innovation delivers practical benefits and preserves the standards they reasonably expect.",
+        "In conclusion, Hong Kong should expand AI in public services cautiously, not indiscriminately. Success should be measured by accurate outcomes, better access and genuine value for money, rather than the number of systems installed. A phased approach, supported by human oversight and accessible alternatives, would allow the Government to modernise services while maintaining public trust. Technology should ultimately serve people, not replace public accountability."
+      ],
+      "translations": [
+        "人工智能與香港公共服務愈來愈相關。政府於2026年8月公布支援1823查詢及投訴處理的AI項目。這引出公共機構應依賴科技到甚麼程度的問題。本文支持逐步擴大應用，但要兼顧效率、問責、資料保障及所有居民的服務可達性。",
+        "AI可減少記錄查詢、搜尋文件及準備摘要等重複工作，讓職員處理更複雜的個案。假設AI先整理投訴，再由職員核對及聯絡居民，便可支援而非取代專業判斷。不過，採購、維護、培訓及核對輸出的責任都要計入；若職員盲信摘要，表面節省時間可能換來投訴、返工及信心下降。",
+        "設計得宜的助手可用淺白語言解釋程序及指引服務，但數碼便利不應成為門檻。長者、殘疾人士及網絡不足者可能仍需個人協助。因此應保留電話與櫃檯服務，並讓職員解釋自動化工具的用途，使市民能作知情選擇。",
+        "AI可能答錯、處理相似個案不一致，亦涉及敏感個人資料。這些疑慮支持設立保障，而非完全拒絕科技：先試低風險用途、限制資料存取、測試系統、保留人工覆核及申訴途徑。部門亦應公開易明的評估結果；這些都是本文建議，不是聲稱現時所有部門已採用的制度。",
+        "結論支持審慎而非無差別地擴大AI。成效應按準確結果、服務可達性及成本效益衡量，不是按安裝多少套系統。分階段推行、人工監察及可用替代服務有助現代化並維持公眾信任；科技應服務市民，不能取代公共問責。"
+      ],
+      "analysis": [
+        {
+          "zh": "第一段直接交代香港背景，再落有條件支持的立場；不是只寫AI很流行。",
+          "en": "The introduction gives a Hong Kong context and a conditional position, rather than merely stating that AI is popular."
+        },
+        {
+          "zh": "第二段只處理效率及成本：重複工作→節省時間→處理複雜個案；例子明示could，不冒充現行制度。",
+          "en": "The efficiency paragraph explains a mechanism: repetitive tasks, time saved, then attention to complex cases. The example uses could and is not a claim about an existing procedure."
+        },
+        {
+          "zh": "第三段換角度處理服務可達性，指出長者／數碼弱勢可能被排除，再提出電話及櫃檯替代。",
+          "en": "A different paragraph addresses access and digital exclusion. Telephone and counter alternatives answer the concern."
+        },
+        {
+          "zh": "第四段承認最強反方：錯誤、私隱及偏差；回應不是叫市民放心，而是限制用途、人工覆核與申訴。",
+          "en": "The strongest objections are acknowledged: errors, privacy and inconsistent treatment. Specific safeguards answer them instead of simply asking the public to trust AI."
+        },
+        {
+          "zh": "結論回扣有條件支持，提出可量度的成效。透明度建議放在第四段，結論只收束立場，不再開新戰線。",
+          "en": "The conclusion returns to conditional support and measurable outcomes. It does not introduce a new, unrelated argument."
+        }
+      ],
+      "position": {
+        "zh": "支持逐步擴大低風險用途；保留人工覆核、申訴渠道及非數碼服務。",
+        "en": "Support gradual, low-risk expansion with human review, appeal routes and non-digital alternatives."
+      }
+    },
+    {
+      "id": "B",
+      "title": {
+        "zh": "原創示範B",
+        "en": "Fiscal Sustainability without Indiscriminate Service Cuts"
+      },
+      "heading": "Fiscal Sustainability without Indiscriminate Service Cuts",
+      "paragraphs": [
+        "Maintaining sustainable public finances is essential for Hong Kong's long-term development. The 2026–27 Budget emphasises fiscal consolidation alongside continued investment in the city's future. However, reducing expenditure on public services is not automatically the fairest or most effective response. I disagree with making service cuts the preferred solution in all circumstances. The Government should first improve spending efficiency, protect essential services and consider revenue measures carefully.",
+        "There is a reasonable case for controlling expenditure. Resources are limited, and programmes that no longer meet public needs should not continue simply because they have received funding in the past. Departments could review overlapping services, improve procurement and simplify administrative processes. These changes may reduce costs without lowering the quality of frontline support. Nevertheless, an equal reduction across all departments would be a crude approach. A service with increasing demand may have little room to cut spending safely, while another programme may contain substantial inefficiencies. Decisions should therefore depend on evidence about costs, outcomes and users' needs, rather than a uniform target. Departments should also distinguish immediate savings from lasting improvements. A lower annual budget is not a genuine success if it causes longer waiting times or expensive emergency intervention.",
+        "Protecting essential services is particularly important in an ageing society. Reductions in community care or preventive healthcare may appear to save money immediately but create larger costs later. For example, insufficient support at home could increase pressure on hospitals and place additional responsibilities on working family members. This could harm both residents' wellbeing and economic participation. Public expenditure should therefore be assessed over a longer period. Targeted assistance may also be more effective than benefits distributed regardless of need, provided that eligibility rules are clear and applications remain accessible. Fiscal discipline should mean allocating resources wisely, not simply spending less.",
+        "Opponents of revenue increases argue that higher taxes or charges could weaken business confidence and increase households' financial burden. This concern deserves serious consideration, especially when particular sectors face uncertain conditions. Yet it does not follow that every revenue option is unacceptable. Any proposal should be assessed for fairness, administrative cost and its likely effect on economic activity. The Government should consult affected groups, explain how additional revenue would support public priorities and avoid abrupt changes. Where charges are reviewed, suitable exemptions or assistance could protect residents with limited means. No single measure should be treated as a substitute for responsible expenditure management. Before major changes, the Government should publish clear assessments of who would be affected and how outcomes would be monitored. This would make difficult trade-offs more transparent and help build support for a sustainable, credible approach to financial management.",
+        "In conclusion, Hong Kong should reject a simplistic choice between cutting services and raising taxes. Spending reviews should identify genuine inefficiencies, while essential support and productive investment should be preserved. Revenue options can be examined cautiously where they are fair and economically sound. A balanced strategy would protect public finances without transferring an unreasonable burden to vulnerable residents or future taxpayers."
+      ],
+      "translations": [
+        "香港長遠發展需要可持續公共財政。2026–27預算案強調財政整合及持續投資未來，但削減服務不一定最公平或有效。本文反對在所有情況下優先削服務；政府應先改善效益、保護基本服務及審慎考慮收入措施。",
+        "資源有限，控制開支有合理之處；過時項目不應因過去曾獲撥款而一直延續。部門可檢視重疊服務、採購及行政流程。然而，各部門需求及可削減空間不同，一律削相同比例過於粗糙。決策應看成本、成效及使用者需要，並區分眼前節省與持續改善；排隊更久或日後需要昂貴應急服務，不算真正成功。",
+        "人口老化下，社區照顧及預防醫療被削，可能令日後成本更高。假設家居支援不足，會增加醫院及在職家人的壓力，影響福祉與勞動參與。因此應看較長期效果。針對性支援可改善資源運用，但資格要清楚、申請要可達；財政紀律是用得精明，不只是用得更少。",
+        "加稅或提高收費可能影響企業信心及家庭負擔，值得認真考慮，但不能因此判斷所有收入選項都不可接受。每個方案均需評估公平、行政成本及經濟影響；諮詢、清楚解釋用途及避免突然改變亦重要。適當豁免可保護低收入居民。本文沒有把任何新稅項說成已公布政策，而是提出透明評估的建議。",
+        "結論反對把削服務與加稅當成簡單二選一。支出檢視應找出真正低效之處，保留基本支援及有生產力的投資；收入選項則可在公平及經濟合理的條件下審慎研究。平衡做法可保護財政，避免把不合理負擔轉移到弱勢居民或未來納稅人。"
+      ],
+      "analysis": [
+        {
+          "zh": "準確回應rather than及to what extent，不偷換成一般談政府財政；立場是反對把削服務當成任何情況的首選。",
+          "en": "The position responds to rather than and to what extent. It rejects cuts as the preferred response in every situation."
+        },
+        {
+          "zh": "先承認控制開支的合理性，再區分改善效益與一刀切，避免非黑即白。",
+          "en": "The essay accepts the case for controlling expenditure, then distinguishes efficiency from indiscriminate reductions."
+        },
+        {
+          "zh": "長者照顧例子展開短期節省→長期成本→家庭勞動參與，形成因果鏈。",
+          "en": "The elderly-care example develops a causal chain from immediate savings to later costs and family participation in work."
+        },
+        {
+          "zh": "正面處理加稅反方：負擔、經濟影響；沒有把任何稅種寫成已宣布政策。",
+          "en": "The revenue objection is addressed through household burdens and economic effects. No proposed tax is presented as announced policy."
+        },
+        {
+          "zh": "結論比較政策選項並回扣財政、民生及問責，不臨尾新增不相關的住房或旅遊論點。",
+          "en": "The conclusion compares options and returns to sustainable finances, essential services and fairness."
+        }
+      ],
+      "position": {
+        "zh": "不同意一刀切；先改善效益與針對性，再審慎檢視收入選項，保護基本服務。",
+        "en": "Reject blanket cuts; improve efficiency and targeting, then review revenue options carefully while protecting essential services."
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "title": {
+        "zh": "先回答題目，再介紹背景",
+        "en": "Answer the question before expanding the background"
+      },
+      "text": {
+        "zh": "圈出指令及比較選項。To what extent需要表明同意到甚麼程度；rather than需要比較兩個選項。首段落有條件的清楚立場，不要只有This issue has advantages and disadvantages。",
+        "en": "Identify the instruction and the alternatives. To what extent asks for a degree of agreement; rather than requires a comparison. Give a clear, possibly conditional position in the introduction."
+      },
+      "example": "I support a gradual expansion of AI, provided that essential safeguards and non-digital alternatives remain in place."
+    },
+    {
+      "title": {
+        "zh": "一段只推進一個主要論點",
+        "en": "Develop one main argument per paragraph"
+      },
+      "text": {
+        "zh": "用「論點→原因→例子／後果→回到題目」。例如AI不是因為新就值得用，而是可能減少重複工作，讓職員有時間處理複雜個案；再指出核對與成本條件。",
+        "en": "Use point → explanation → example or consequence → link to the question. AI is not desirable simply because it is new: explain how less repetitive work can free staff for complex cases, then consider verification and costs."
+      },
+      "example": "AI can reduce repetitive administrative work. This may allow officers to spend more time on complex cases, provided that outputs are checked."
+    },
+    {
+      "title": {
+        "zh": "選最強反方，認真回應",
+        "en": "Address the strongest reasonable objection"
+      },
+      "text": {
+        "zh": "不要捏造容易打倒的反方。先承認私隱、成本、弱勢使用者等合理疑慮，再提出與問題直接相關的限制、人工覆核或替代渠道。",
+        "en": "Do not invent a weak objection. Recognise genuine concerns such as privacy, costs or exclusion, then answer them with relevant limits, human review or alternative channels."
+      },
+      "example": "While privacy concerns are valid, they support restricting high-risk uses rather than rejecting all forms of assistance."
+    },
+    {
+      "title": {
+        "zh": "例子要準，假設要明示",
+        "en": "Use accurate examples and label hypothetical cases"
+      },
+      "text": {
+        "zh": "一個準確官方政策例子已經有用。沒有確實數據就不要作出比例、調查或研究。用could、may及For example表明假設；不要把預期成效寫成已實現。",
+        "en": "One accurate policy example is enough. Do not invent percentages, surveys or studies. Use could, may and clear framing for hypothetical examples; distinguish announced expectations from achieved results."
+      },
+      "example": "For example, an older resident may need telephone assistance when completing a complex application."
+    },
+    {
+      "title": {
+        "zh": "清楚英文勝過失控深字",
+        "en": "Prefer controlled language to forced sophistication"
+      },
+      "text": {
+        "zh": "官方寫作描述重視準確、合適語域及清晰表意。長句若失控就拆開；避免絕對字眼always、all、must everywhere。簡單句與熟悉複句搭配已足夠。",
+        "en": "The official writing descriptors emphasise accuracy, appropriate register and clear meaning. Split a sentence that becomes difficult to control. Avoid unsupported absolutes; combine clear simple sentences with familiar complex structures."
+      },
+      "example": "The proposal may improve access, but its success depends on staff training and reliable support."
+    },
+    {
+      "title": {
+        "zh": "結論收束，最後留時間檢查",
+        "en": "Conclude, then reserve time to check"
+      },
+      "text": {
+        "zh": "結論回應原問題及實施條件，不新增另一個政策題。最後查漏答、立場矛盾、動詞、單複數、冠詞與連接詞。切勿用最後五分鐘重寫整個開頭。",
+        "en": "Return to the original question and the conditions behind your position. Do not introduce an unrelated policy. Check missing requirements, contradictions, verbs, agreement, articles and connectors instead of rewriting the introduction at the last minute."
+      },
+      "example": "A phased approach would allow modernisation while protecting access and public accountability."
+    }
+  ],
+  "rubric": [
+    {
+      "key": "content",
+      "max": 30,
+      "title": {
+        "zh": "內容與論證",
+        "en": "Content & argument"
+      },
+      "parts": [
+        {
+          "zh": "切題及立場 10",
+          "en": "Task response & position 10"
+        },
+        {
+          "zh": "理由展開及因果 10",
+          "en": "Development & reasoning 10"
+        },
+        {
+          "zh": "例子、反方及回應 10",
+          "en": "Examples, objection & response 10"
+        }
+      ]
+    },
+    {
+      "key": "language",
+      "max": 40,
+      "title": {
+        "zh": "語言與文體",
+        "en": "Language & style"
+      },
+      "parts": [
+        {
+          "zh": "語法及標點 15",
+          "en": "Grammar & punctuation 15"
+        },
+        {
+          "zh": "句式控制 10",
+          "en": "Sentence control 10"
+        },
+        {
+          "zh": "用字準確及合適 10",
+          "en": "Precise, appropriate vocabulary 10"
+        },
+        {
+          "zh": "語域、拼字及文體 5",
+          "en": "Register, spelling & style 5"
+        }
+      ]
+    },
+    {
+      "key": "organisation",
+      "max": 30,
+      "title": {
+        "zh": "組織與連貫",
+        "en": "Organisation & coherence"
+      },
+      "parts": [
+        {
+          "zh": "整體結構及首尾 10",
+          "en": "Overall structure & framing 10"
+        },
+        {
+          "zh": "段落焦點及次序 10",
+          "en": "Paragraph focus & sequence 10"
+        },
+        {
+          "zh": "句段連貫及銜接 10",
+          "en": "Cohesion & transitions 10"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "treasury-career",
+      "title": {
+        "zh": "庫務署：TA招聘筆試要求",
+        "en": "Treasury: TA recruitment examination"
+      },
+      "note": {
+        "zh": "確認英文寫作、書面表達及組織能力；未公布本包權重或70分門檻。",
+        "en": "Confirms English writing, written communication and organisation. It does not publish this practice weighting or a 70-point threshold."
+      },
+      "url": "https://www.try.gov.hk/internet/ehcare_career.html"
+    },
+    {
+      "id": "hkeaa-2025-pdf",
+      "title": {
+        "zh": "考評局：2025英文寫作考生示例",
+        "en": "HKEAA: 2025 writing candidate samples"
+      },
+      "note": {
+        "zh": "只看Level 5 exemplar 2、Part B Q3：PDF第16–20頁（印刷15–19頁）。是真實答卷，不是完美標準答案。",
+        "en": "Read Level 5 exemplar 2, Part B Q3: PDF pages 16–20 (printed 15–19). This is an actual candidate script, not an edited model answer."
+      },
+      "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/subject_information/eng_lang/2025-Sample-ENG-Paper2-S633.pdf#page=16"
+    },
+    {
+      "id": "hkeaa-descriptors",
+      "title": {
+        "zh": "考評局：官方英文寫作等級描述",
+        "en": "HKEAA: official writing level descriptors"
+      },
+      "note": {
+        "zh": "參考切題、語言準確、合適文體、段落及連貫；不是TA評分表。",
+        "en": "A reference for relevance, language accuracy, appropriate style, paragraphing and coherence; not a TA marking scheme."
+      },
+      "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/eng_lang/LevelDescriptors-ENG-Writing.pdf"
+    },
+    {
+      "id": "gov-ai-1823",
+      "title": {
+        "zh": "香港時事：AI與1823服務",
+        "en": "Hong Kong context: AI & 1823"
+      },
+      "note": {
+        "zh": "2026年8月公布AI服務提升項目；勿把預期改善當成已實現成效。",
+        "en": "AI service-improvement projects announced in August 2026. Expected benefits are not achieved outcomes."
+      },
+      "url": "https://www.info.gov.hk/gia/general/202608/27/P2026082700593.htm"
+    },
+    {
+      "id": "budget-fiscal",
+      "title": {
+        "zh": "2026–27預算案：公共財政",
+        "en": "2026–27 Budget: public finances"
+      },
+      "note": {
+        "zh": "財政整合與長期可持續，供比較成本、效益與民生。",
+        "en": "Fiscal consolidation and long-term sustainability, for weighing costs, outcomes and public needs."
+      },
+      "url": "https://www.budget.gov.hk/2026/eng/budget50.html"
+    },
+    {
+      "id": "budget-elderly",
+      "title": {
+        "zh": "2026–27預算案：長者照顧",
+        "en": "2026–27 Budget: elderly care"
+      },
+      "note": {
+        "zh": "社區及院舍照顧服務券、銀髮經濟；兩類照顧不必是二選一。",
+        "en": "Community and residential care vouchers and the silver economy. Care options need not be an absolute either-or choice."
+      },
+      "url": "https://www.budget.gov.hk/2026/eng/budget43.html"
+    }
+  ]
+}
