@@ -1,26 +1,36 @@
-# TA Writing Lab
+# Writing Notes
 
-Independent bilingual English argumentative-writing practice for a Hong Kong Treasury Accountant candidate. Study first, read original sample essays, practise for 60 minutes and export a private draft for Afuu to mark in the existing Telegram conversation.
+Bilingual personal English argumentative-writing notes. Read the three writing guides, select accurate government evidence, study original examples, practise for 60 minutes and export a locally saved draft for feedback in the existing conversation.
 
-## What is official — and what is not
+## Learning material
 
-The Treasury's public recruitment information confirms an English essay-type writing paper assessing written communication and organisation. The 60-minute / approximately 500-word format was supplied by the candidate. Actual invitations and examination instructions take priority.
+- Three detailed guides: task response and development; accurate language and appropriate style; structure, paragraphing and cohesion.
+- Weak/improved examples, worked paragraphs, self-checks and short exercises with collapsible suggested answers.
+- Six question-linked government notes covering AI services, public finances, elderly care, digital inclusion, information literacy and infrastructure.
+- Government facts are linked to their official source and date. Announcements, estimates, projected benefits, analysis and recommendations are distinguished. Sources were checked on **3 October 2026**; the page is not a continuously updated news service.
+- The two original model essay bodies remain 500 words each. The five-paragraph allocation is a suggested practice method, not an official format.
 
-Official HKEAA candidate samples and writing level descriptors are linked as references from another Hong Kong examination. They are **not TA sample answers or a TA marking scheme**. All six practice questions and both 500-word examples are original independent material.
+HKEAA writing descriptors and candidate scripts are references from another Hong Kong examination. The 60-minute/about-500-word format and **70/100** threshold are user-supplied practice settings. Weights are Content 30, Language 40 and Organisation 30, not an official marking standard or a guarantee of an examination pass. See [MARKING.md](./MARKING.md).
 
-The practice pass threshold is **70/100**, selected by the user. Practice weights are Content & argument 30, Language & style 40, Organisation & coherence 30. These weights do not represent an official TA standard or guarantee an examination pass. See [MARKING.md](./MARKING.md).
+## Drafts and feedback
 
-## Privacy and genuine marking
+There is no backend, analytics, client API key or automatic grading. Essays, outlines and timing state stay in browser localStorage. Downloads and clipboard operations are local; users must send the exported text/file in the existing conversation, directly or through the person who shared the link. Download before changing devices or clearing browser data.
 
-- No backend, API keys, analytics or automatic grading.
-- Essays, outlines and timing state are stored only in the visitor's browser localStorage. They are not synced or sent to this repository.
-- Downloads and clipboard operations are local. The visitor must send the exported `.txt` file or text in the existing Telegram conversation with Afuu (or through the person who shared the site).
-- Completing or downloading an essay is **not** a submission receipt and **not** a score.
-- Download before switching devices or clearing browser data. Browser storage can fail; the interface warns about it.
+The existing browser-storage identifier is deliberately unchanged so the branding update does not lose drafts. The new export rubric identifier is `writing-practice-v1`; the previous version uses the same weights and threshold.
+
+## Search visibility, not access control
+
+- Static HTML includes `robots` and `googlebot` metadata requesting `noindex,nofollow,nosnippet,noimageindex`.
+- Crawlers must be able to read the HTML for `noindex` to work. Do not add a blanket crawl block that hides this instruction.
+- A `robots.txt` file in a project subdirectory is not an effective origin-root robots policy. No origin-wide settings or other projects have been changed.
+- There is no sitemap submission, indexable public PDF or intended promotion of the site. The previously published PDF is retained outside the deployment package.
+- These settings are **not authentication**. The public source, repository address and older commit history remain accessible; the existing website address is deliberately retained. Third-party links, copies and indexing delays cannot be ruled out. No claim of verified Google removal is made.
+
+Official implementation reference: [Google: block indexing with noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing).
 
 ## Temporary publication
 
-GitHub Pages is scheduled to be unpublished on **5 October 2026 at 23:00 Hong Kong time (15:00 UTC)**. The source repository is retained. GitHub scheduled jobs can be delayed. The repository-scoped expiry workflow has a default dry-run manual action and verifies the Pages API after an actual unpublish. It never deletes repository files or student data.
+The Pages site is scheduled to be unpublished on **5 October 2026 at 23:00 Hong Kong time (15:00 UTC)**, with source code retained. Scheduled jobs can be delayed. The existing repository-scoped expiry workflow is unchanged; a dry run is not proof of a completed future unpublish.
 
 ## Run and test
 
@@ -30,12 +40,4 @@ npm run check
 npm test
 ```
 
-Open the localhost URL printed by the server. All runtime assets are local; there are no npm runtime dependencies or build step. GitHub Pages uses `main` at the repository root.
-
-## Official references
-
-- [Treasury recruitment examination](https://www.try.gov.hk/internet/ehcare_career.html)
-- [HKEAA 2025 writing samples](https://www.hkeaa.edu.hk/DocLibrary/HKDSE/subject_information/eng_lang/2025-Sample-ENG-Paper2-S633.pdf) — PDF pages 16–20; printed 15–19.
-- [HKEAA writing descriptors](https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/eng_lang/LevelDescriptors-ENG-Writing.pdf)
-
-Official scripts are linked, not copied into this repository. The downloadable PDF contains our independent exercises, examples and teaching notes.
+All runtime assets are local. No npm runtime dependencies or build step. GitHub Pages uses `main` at the repository root. Detailed source URLs and dates are in `content.json`; official scripts are linked, not copied.

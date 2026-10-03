@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Independent bilingual TA English essay practice: study first, 60-minute writing, private drafts and export for feedback.">
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Personal bilingual English writing notes: clear arguments, controlled language, coherent paragraphs and locally saved drafts.">
+  <meta name="robots" content="noindex,nofollow,nosnippet,noimageindex">
+  <meta name="googlebot" content="noindex,nofollow,nosnippet,noimageindex">
   <meta name="theme-color" content="#f6f4ed">
-  <title>TA 寫作練習室 · TA Writing Lab</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script type="module" src="./app.js"></script>
+  <title>寫作筆記 · Writing Notes</title>
+  <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=2">
+  <script type="module" src="./app.js?v=2"></script>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">跳到主要內容</a>
   <header class="site-header">
-    <a class="brand" href="#study" aria-label="TA Writing Lab"><span class="brand-mark" aria-hidden="true">TA<span>／</span></span><span data-i18n="brand">TA 寫作練習室</span></a>
+    <a class="brand" href="#study" aria-label="Writing Notes"><span class="brand-mark" aria-hidden="true">WN<span>／</span></span><span data-i18n="brand">寫作筆記</span></a>
     <nav aria-label="Main navigation">
       <a href="#study" data-view="study" data-i18n="study">先溫習</a>
-      <a href="#practice" data-view="practice" data-i18n="practice">寫作練習</a>
+      <a href="#government" data-view="government" data-i18n="government">政府素材</a>
       <a href="#models" data-view="models" data-i18n="models">範文參考</a>
+      <a href="#practice" data-view="practice" data-i18n="practice">寫作練習</a>
       <a href="#grading" data-view="grading" data-i18n="grading">評分與進步</a>
     </nav>
     <div class="language-switch" role="group" aria-label="Language">
@@ -29,14 +31,15 @@
   <main id="main" tabindex="-1">
     <p id="loading" role="status" data-i18n="loading">正在準備練習內容…</p>
     <section id="study" class="view" hidden></section>
+    <section id="government" class="view" hidden></section>
     <section id="practice" class="view" hidden></section>
     <section id="models" class="view" hidden></section>
     <section id="grading" class="view" hidden></section>
-    <noscript><p>互動寫作需要JavaScript。You need JavaScript for interactive writing. <a href="./practice.pdf">下載練習PDF / Download practice PDF</a></p></noscript>
+    <noscript><p>請開啟JavaScript閱讀寫作筆記及使用練習功能。若有草稿，請勿清除瀏覽器資料。 Enable JavaScript to read the notes and use writing practice. Do not clear browser data if you have a draft.</p></noscript>
   </main>
-  <footer class="site-footer"><p data-i18n="footer">獨立TA寫作練習｜暫定2026年10月5日23:00香港時間下線｜原始碼保留</p><a href="./practice.pdf" download data-i18n="pdf">下載完整練習PDF</a></footer>
+  <footer class="site-footer"><p data-i18n="footer">獨立寫作筆記｜預定2026年10月5日23:00香港時間下線｜原始碼保留</p><p class="small muted" data-i18n="privacyNotice"></p></footer>
   <dialog id="submission-dialog" aria-labelledby="submission-title">
-    <div class="dialog-top"><span class="eyebrow">TA / SUBMISSION</span><button type="button" id="dialog-close" class="close-button" data-i18n="close">關閉</button></div>
+    <div class="dialog-top"><span class="eyebrow">WRITING / SUBMISSION</span><button type="button" id="dialog-close" class="close-button" data-i18n="close">關閉</button></div>
     <h2 id="submission-title" data-i18n="submissionTitle">作文準備好，下一步傳給阿福。</h2>
     <p data-i18n="submissionNote"></p>
     <p id="submission-summary" class="submission-summary"></p>

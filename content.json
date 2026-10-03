@@ -1,14 +1,14 @@
 {
-  "version": "1.0.0",
-  "rubricVersion": "ta-practice-v1",
+  "version": "1.1.0",
+  "rubricVersion": "writing-practice-v1",
   "durationSeconds": 3600,
   "targetWords": 500,
   "passMark": 70,
   "expiry": "2026-10-05T15:00:00Z",
   "ui": {
     "brand": {
-      "zh": "TA 寫作練習室",
-      "en": "TA Writing Lab"
+      "zh": "寫作筆記",
+      "en": "Writing Notes"
     },
     "tagline": {
       "zh": "先讀懂，再寫清楚。",
@@ -31,8 +31,8 @@
       "en": "Marking & progress"
     },
     "unofficial": {
-      "zh": "非官方考前練習",
-      "en": "Independent exam practice"
+      "zh": "獨立英文寫作練習",
+      "en": "Independent English writing practice"
     },
     "minutes": {
       "zh": "分鐘",
@@ -71,8 +71,8 @@
       "en": "Official material: learn the craft, not another exam format"
     },
     "officialNote": {
-      "zh": "未找到公開的TA官方範文或詳細評分表。以下考評局答卷及描述是另一個香港考試的官方材料；練習題、原創示範、分數權重與70分門檻均非TA官方。",
-      "en": "No public TA model answer or detailed marking scheme was found. The HKEAA scripts and descriptors belong to a different Hong Kong examination. Practice questions, original examples, score weights and the 70-point threshold are not official TA materials."
+      "zh": "以下是考評局公開的英文寫作材料，用來學習切題、語言及組織。練習題、原創示範、30／40／30權重與70分門檻是本網站的自訂練習設定，不是任何招聘考試的官方答案、評分表或合格標準。",
+      "en": "These public HKEAA materials help explain task response, language and organisation. Our questions, original examples, 30/40/30 weights and 70-point threshold are independent practice settings, not official answers, a marking scheme or a pass standard for any recruitment examination."
     },
     "sourcesTitle": {
       "zh": "香港時事及官方來源",
@@ -283,8 +283,8 @@
       "en": "70/100: your selected practice pass threshold"
     },
     "rubricNote": {
-      "zh": "以下是我們的練習權重，參考官方寫作描述的三個面向。不是TA官方評分表，不等同DSE等級，也不保證真實考試及格。",
-      "en": "These are our practice weights, informed by the three areas in the official writing descriptors. They are not a TA marking scheme, do not map to DSE levels and cannot guarantee an actual exam pass."
+      "zh": "以下權重參考官方寫作描述的三個面向，但由本練習自訂。不是招聘考試的官方評分表，不等同DSE等級，也不保證真實考試及格。下面的段落方法及例句同樣是原創教學，不是考評局指定格式。",
+      "en": "These practice weights draw on the three areas in the official writing descriptors, but are independently set. They are not an official recruitment marking scheme, do not map to DSE levels and cannot guarantee an actual exam pass. The paragraph methods and examples below are our own teaching, not prescribed HKEAA formats."
     },
     "submitStepsTitle": {
       "zh": "寫完點交俾阿福？",
@@ -339,20 +339,16 @@
       "en": "Clear position? Two different arguments? Explained mechanisms? A fair counterargument? A conclusion that answers the question? No invented data?"
     },
     "footer": {
-      "zh": "獨立TA寫作練習｜暫定2026年10月5日23:00香港時間下線｜原始碼保留",
-      "en": "Independent TA writing practice | Scheduled to go offline on 5 Oct 2026, 23:00 HKT | Source code retained"
-    },
-    "pdf": {
-      "zh": "下載完整練習PDF",
-      "en": "Download the complete practice PDF"
+      "zh": "獨立寫作筆記｜預定2026年10月5日23:00香港時間下線｜原始碼保留",
+      "en": "Independent writing notes | Scheduled to go offline on 5 Oct 2026, 23:00 HKT | Source code retained"
     },
     "loading": {
       "zh": "正在準備練習內容…",
       "en": "Preparing the practice material…"
     },
     "loadError": {
-      "zh": "內容未能載入，請重新整理；也可先下載PDF溫習。",
-      "en": "The material could not load. Refresh the page or use the practice PDF."
+      "zh": "內容未能載入，請重新整理。若曾寫作，請勿清除瀏覽器資料。",
+      "en": "The material could not load. Refresh the page. If you have a draft, do not clear browser data."
     },
     "skip": {
       "zh": "跳到主要內容",
@@ -361,6 +357,110 @@
     "unofficialLabel": {
       "zh": "原創練習・非官方答案",
       "en": "Original practice · not an official answer"
+    },
+    "guideTitle": {
+      "zh": "內容、語言、組織：逐項學點寫",
+      "en": "Content, language, organisation: how to write"
+    },
+    "guideLead": {
+      "zh": "先看三項評分的寫法，再選一題政府素材。每項都有弱例、改寫及短練習；先試自己寫，之後才打開參考答案。",
+      "en": "Learn how each marking area works, then select government evidence for a question. Each guide includes weak examples, improvements and a short exercise. Try the exercise before opening the suggested answer."
+    },
+    "officialPrinciple": {
+      "zh": "官方描述重視甚麼",
+      "en": "What the official descriptors value"
+    },
+    "weakExample": {
+      "zh": "較弱寫法／常見問題",
+      "en": "Weak example / common problem"
+    },
+    "betterExample": {
+      "zh": "較清楚的寫法",
+      "en": "A clearer version"
+    },
+    "whyBetter": {
+      "zh": "點解較好",
+      "en": "Why it works better"
+    },
+    "workedParagraph": {
+      "zh": "完整示範：看一句怎樣推進下一句",
+      "en": "Worked example: see how each sentence advances the argument"
+    },
+    "selfCheck": {
+      "zh": "寫完，自己問這幾句",
+      "en": "Questions to ask when checking your draft"
+    },
+    "shortDrill": {
+      "zh": "三分鐘短練習",
+      "en": "A three-minute exercise"
+    },
+    "suggestedAnswer": {
+      "zh": "做完才看：參考寫法及解釋",
+      "en": "After trying: suggested answer and explanation"
+    },
+    "structureTitle": {
+      "zh": "約500詞：一個可用的五段安排",
+      "en": "A workable five-paragraph plan for about 500 words"
+    },
+    "structureNote": {
+      "zh": "70＋130＋130＋110＋60＝500，只是方便分配篇幅的起點，唔係逐段硬性字數。按題目及考場指示調整；若指定文章、信件或其他文體，先跟文體要求。",
+      "en": "70 + 130 + 130 + 110 + 60 = 500 is a starting point for allocating space, not a fixed paragraph quota. Adapt to the task and actual examination instructions. Follow any specified article, letter or other text type."
+    },
+    "grammarTitle": {
+      "zh": "最容易即刻改善的八組英文",
+      "en": "Eight language problems you can fix immediately"
+    },
+    "government": {
+      "zh": "政府素材",
+      "en": "Govt notes"
+    },
+    "governmentTitle": {
+      "zh": "政策唔使背晒，要識用。",
+      "en": "Understand the policy. Use the evidence."
+    },
+    "governmentLead": {
+      "zh": "按六道練習題整理香港官方資料，核對日期：2026年10月3日。每題分開「已核實事實」及「可寫的分析」；官方公布並不等於政策已全面落實，更不等於所有預期效益已實現。",
+      "en": "Hong Kong official material organised around the six practice questions, checked on 3 October 2026. Each topic separates verified facts from possible analysis. An announcement does not mean full implementation, and projected benefits are not achieved outcomes."
+    },
+    "governmentCta": {
+      "zh": "睇政府資料，搵一個準確例子",
+      "en": "Find one accurate government example"
+    },
+    "factsLabel": {
+      "zh": "官方事實：可核實、要帶日期／口徑",
+      "en": "Official facts: keep the date and scope"
+    },
+    "argumentLabel": {
+      "zh": "可支持的理由：原創分析，唔係官方結論",
+      "en": "Possible argument: our analysis, not an official conclusion"
+    },
+    "objectionLabel": {
+      "zh": "最強反方及回應方向",
+      "en": "Strong objection and a possible response"
+    },
+    "usageLabel": {
+      "zh": "放入英文作文：原創寫法",
+      "en": "Using it in an essay: an original example"
+    },
+    "avoidLabel": {
+      "zh": "呢個誤讀會令論證失準",
+      "en": "A misreading to avoid"
+    },
+    "topicPractice": {
+      "zh": "用呢份素材練這題",
+      "en": "Practise this question with these notes"
+    },
+    "sourceDate": {
+      "zh": "原文日期／資料期",
+      "en": "Source date / reference period"
+    },
+    "privacyNotice": {
+      "zh": "本頁已設定禁止搜尋收錄，但並非私人網站；有連結仍可閱讀，公開原始碼亦可查看。作文只存於你的瀏覽器。",
+      "en": "This page requests no search indexing, but it is not private: anyone with the link can read it, and the source remains public. Your essay is stored only in your browser."
+    },
+    "reviewRoute": {
+      "zh": "先讀本頁三項教學 → 選政府素材 → 看範文拆解 → 限時寫作 → 下載交卷。",
+      "en": "Read the three guides → choose government evidence → study the sample analysis → write under time pressure → download your submission."
     }
   },
   "questions": [
@@ -659,76 +759,859 @@
   ],
   "sources": [
     {
-      "id": "treasury-career",
-      "title": {
-        "zh": "庫務署：TA招聘筆試要求",
-        "en": "Treasury: TA recruitment examination"
-      },
-      "note": {
-        "zh": "確認英文寫作、書面表達及組織能力；未公布本包權重或70分門檻。",
-        "en": "Confirms English writing, written communication and organisation. It does not publish this practice weighting or a 70-point threshold."
-      },
-      "url": "https://www.try.gov.hk/internet/ehcare_career.html"
-    },
-    {
-      "id": "hkeaa-2025-pdf",
-      "title": {
-        "zh": "考評局：2025英文寫作考生示例",
-        "en": "HKEAA: 2025 writing candidate samples"
-      },
-      "note": {
-        "zh": "只看Level 5 exemplar 2、Part B Q3：PDF第16–20頁（印刷15–19頁）。是真實答卷，不是完美標準答案。",
-        "en": "Read Level 5 exemplar 2, Part B Q3: PDF pages 16–20 (printed 15–19). This is an actual candidate script, not an edited model answer."
-      },
-      "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/subject_information/eng_lang/2025-Sample-ENG-Paper2-S633.pdf#page=16"
-    },
-    {
       "id": "hkeaa-descriptors",
       "title": {
-        "zh": "考評局：官方英文寫作等級描述",
-        "en": "HKEAA: official writing level descriptors"
+        "zh": "考評局：英文寫作等級描述",
+        "en": "HKEAA: writing level descriptors"
       },
       "note": {
-        "zh": "參考切題、語言準確、合適文體、段落及連貫；不是TA評分表。",
-        "en": "A reference for relevance, language accuracy, appropriate style, paragraphing and coherence; not a TA marking scheme."
+        "zh": "參考內容切題、語言準確及適切、有效段落與句段連貫。三項練習權重並非由此文件換算。",
+        "en": "Relevant content, accurate and appropriate language, effective paragraphing and cohesion. Our numerical weights are not derived from these levels."
       },
       "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/eng_lang/LevelDescriptors-ENG-Writing.pdf"
     },
     {
-      "id": "gov-ai-1823",
+      "id": "hkeaa-2025-pdf",
       "title": {
-        "zh": "香港時事：AI與1823服務",
-        "en": "Hong Kong context: AI & 1823"
+        "zh": "考評局：2025英文寫作真實答卷",
+        "en": "HKEAA: 2025 writing candidate samples"
       },
       "note": {
-        "zh": "2026年8月公布AI服務提升項目；勿把預期改善當成已實現成效。",
-        "en": "AI service-improvement projects announced in August 2026. Expected benefits are not achieved outcomes."
+        "zh": "Level 5 exemplar 2、Part B Q3，PDF第16–20頁（印刷15–19頁）。學習立場與論證，不把真實答卷當完美答案。",
+        "en": "Level 5 exemplar 2, Part B Q3, PDF pages 16–20 (printed 15–19). Study position and development; a candidate script is not a perfect model answer."
+      },
+      "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/subject_information/eng_lang/2025-Sample-ENG-Paper2-S633.pdf#page=16"
+    },
+    {
+      "id": "hkeaa-framework",
+      "title": {
+        "zh": "考評局：2024英文評核目標（寫作部分）",
+        "en": "HKEAA: 2024 assessment objectives, Writing"
+      },
+      "note": {
+        "zh": "強調寫作目的、對象、支持細節、清楚結構及修訂。這是另一個考試的歷年官方文件，只借用通用寫作能力。",
+        "en": "Purpose, audience, supporting detail, structured writing and revision. This historical document belongs to another examination; we use only the general writing objectives."
+      },
+      "url": "https://www.hkeaa.edu.hk/DocLibrary/HKDSE/Subject_Information/eng_lang/2024hkdse-e-elang.pdf"
+    },
+    {
+      "id": "gov-ai-1823",
+      "date": "2026-08-27",
+      "title": {
+        "zh": "數字政策辦公室：1823的四個AI項目",
+        "en": "Digital Policy Office: four AI projects for 1823"
+      },
+      "note": {
+        "zh": "通話助理、電郵提取、部門回覆優先排序及儀表板；公布的是計劃及預期效益。",
+        "en": "Call Assistant, Email Extraction, reply prioritisation and Dashboard; announced plans and expected benefits."
       },
       "url": "https://www.info.gov.hk/gia/general/202608/27/P2026082700593.htm"
     },
     {
       "id": "budget-fiscal",
+      "date": "2026-02-25",
       "title": {
-        "zh": "2026–27預算案：公共財政",
-        "en": "2026–27 Budget: public finances"
+        "zh": "2026–27預算案：收支預算，第274–278段",
+        "en": "2026–27 Budget: estimates, paragraphs 274–278"
       },
       "note": {
-        "zh": "財政整合與長期可持續，供比較成本、效益與民生。",
-        "en": "Fiscal consolidation and long-term sustainability, for weighing costs, outcomes and public needs."
+        "zh": "分清總開支、經常開支、經營帳目及計及債券後的綜合帳目。所有金額都是預算，不是全年實際結果。",
+        "en": "Distinguish total and recurrent expenditure, the Operating Account and the consolidated position after bonds. These figures are estimates, not full-year outturns."
       },
-      "url": "https://www.budget.gov.hk/2026/eng/budget50.html"
+      "url": "https://www.budget.gov.hk/2026/eng/budget54.html"
     },
     {
       "id": "budget-elderly",
+      "date": "2026-02-25",
       "title": {
-        "zh": "2026–27預算案：長者照顧",
-        "en": "2026–27 Budget: elderly care"
+        "zh": "2026–27預算案：長者照顧，第236段",
+        "en": "2026–27 Budget: elderly care, paragraph 236"
       },
       "note": {
-        "zh": "社區及院舍照顧服務券、銀髮經濟；兩類照顧不必是二選一。",
-        "en": "Community and residential care vouchers and the silver economy. Care options need not be an absolute either-or choice."
+        "zh": "提出同時增加社區及院舍照顧服務券，適合討論互補照顧及不同需要。",
+        "en": "Sets out increases in both community and residential care vouchers, useful for discussing complementary care and different needs."
       },
       "url": "https://www.budget.gov.hk/2026/eng/budget43.html"
+    },
+    {
+      "id": "gov-health-integration",
+      "date": "2026-08-18",
+      "title": {
+        "zh": "基層醫療署：長者健康服務分階段整合",
+        "en": "Primary Healthcare Commission: phased integration of elderly health services"
+      },
+      "note": {
+        "zh": "首階段安排由2026年10月5日開始；完成整合後的服務點及容量是目標，並非10月3日已達成的結果。",
+        "en": "First-phase arrangements start on 5 October 2026. Service points and capacity after completion are targets, not outcomes already achieved on 3 October."
+      },
+      "url": "https://www.info.gov.hk/gia/general/202608/18/P2026081800303.htm"
+    },
+    {
+      "id": "gov-digital-inclusion",
+      "date": "2026-04-20",
+      "title": {
+        "zh": "數字政策辦公室：長者數碼培訓新一輪（2026年4月）",
+        "en": "Digital Policy Office: new Smart Silver ICT training round"
+      },
+      "note": {
+        "zh": "原文是「Smart Silver」長者進階數碼培訓，供60歲或以上、已有基本數碼知識的長者免費報讀；不是所有長者都已完成培訓。",
+        "en": "Smart Silver enriched ICT training is free for people aged 60 or above with basic digital knowledge; not evidence that all older people have completed training."
+      },
+      "url": "https://www.info.gov.hk/gia/general/202604/20/P2026042000262.htm"
+    },
+    {
+      "id": "gov-information-literacy",
+      "date": "2026-01-21",
+      "title": {
+        "zh": "立法會書面答覆：社交媒體與資訊素養",
+        "en": "Legislative Council written reply: social media and information literacy"
+      },
+      "note": {
+        "zh": "2026年答覆提到教育局2024年學習架構，教學生評估資訊及媒體內容；不能將此說成新公布的刪帖法例。",
+        "en": "The 2026 reply cites the Education Bureau's 2024 learning framework for evaluating information and media; it is not a newly announced content-removal law."
+      },
+      "url": "https://www.info.gov.hk/gia/general/202601/21/P2026012100290.htm"
+    },
+    {
+      "id": "budget-capital",
+      "date": "2026-02-25",
+      "title": {
+        "zh": "2026–27預算案：工務及發債，第266–269段",
+        "en": "2026–27 Budget: works and bonds, paragraphs 266–269"
+      },
+      "note": {
+        "zh": "工務開支預算約1,280億港元；原文說明發債所得用於基建，不用於政府經常開支。",
+        "en": "Capital works expenditure estimated at about HK$128 billion. The speech states bond proceeds are for infrastructure, not government recurrent expenditure."
+      },
+      "url": "https://www.budget.gov.hk/2026/eng/budget52.html"
+    }
+  ],
+  "updatedAt": "2026-10-03",
+  "writingGuides": [
+    {
+      "key": "content",
+      "title": {
+        "zh": "內容 30：立場要答題，理由要解得通",
+        "en": "Content 30: answer the task and explain your reasoning"
+      },
+      "intro": {
+        "zh": "唔係寫得多政策名稱就高分。讀者要睇到：你回答了哪個選擇、點解這個選擇較合理、例子如何支持理由，以及在甚麼條件下你的立場仍站得住。",
+        "en": "Naming many policies is not enough. The reader needs to see which choice you support, why it is preferable, how the evidence supports it and under what conditions the position remains defensible."
+      },
+      "officialPrinciple": {
+        "zh": "考評局重視相關而有充分展開的內容、寫作目的及讀者。下面的審題與PEEL方法是我們的實用教法，並非官方指定公式。",
+        "en": "HKEAA values relevant, developed content, purpose and the reader. The task-analysis and PEEL methods below are our practical teaching, not an official prescribed formula."
+      },
+      "blocks": [
+        {
+          "title": {
+            "zh": "① 先拆題：主題、指令、比較及範圍",
+            "en": "1. Identify the topic, instruction, alternatives and scope"
+          },
+          "body": {
+            "zh": "AI題唔係問科技是否流行，而是問政府應否擴大使用、有哪些好處及風險、你支持甚麼。To what extent要求同意程度；rather than要求比較兩邊；discuss both views不能只寫自己支持的一面。提綱第一行用自己的話改寫題目，避免離題。",
+            "en": "The AI question asks about expanding government use, benefits, risks and your view, not whether technology is fashionable. To what extent requires a degree of agreement; rather than requires comparison; discuss both views requires both perspectives. Restate the task in your outline."
+          },
+          "weak": "Artificial intelligence is very popular nowadays and has changed the world.",
+          "better": "The government should expand low-risk uses of AI, but decisions affecting individual rights should remain subject to human review.",
+          "why": {
+            "zh": "改寫直接回答應否擴大，並指出適用範圍及條件；背景句本身沒有錯，只是不能代替立場。",
+            "en": "The revision answers whether to expand, specifies the scope and gives a condition. A background sentence is not inherently wrong, but cannot replace a position."
+          }
+        },
+        {
+          "title": {
+            "zh": "② 選兩個不同理由，寫出因果鏈",
+            "en": "2. Choose two distinct reasons and explain the mechanism"
+          },
+          "body": {
+            "zh": "先分清「效率」與「公平可達性」，唔好兩段都只講快。每段用論點→如何發生→誰受影響→回到題目。問自己兩次「所以呢？」：少做重複輸入，所以職員有時間處理複雜個案；所以可能改善服務，但仍要核對資料。",
+            "en": "Separate efficiency from fair access; do not make both paragraphs about speed. Move from point to mechanism, affected people and the task. Ask 'so what?' twice: less repeated data entry frees officers for complex cases, which may improve service, provided that records are checked."
+          },
+          "weak": "AI is useful because it is efficient. It can save time and improve efficiency.",
+          "better": "Automating routine data entry could free officers to investigate complex complaints. The benefit depends on checking the extracted information, because inaccurate records may create additional work.",
+          "why": {
+            "zh": "指出了具體工作、時間如何重新分配及效益的限制，不再用efficient解釋efficiency。",
+            "en": "It names the task, explains the reallocation of time and identifies a limit instead of explaining efficiency with the word efficient."
+          }
+        },
+        {
+          "title": {
+            "zh": "③ 一個準確例子，比三個假數字更有用",
+            "en": "3. One accurate example is better than invented statistics"
+          },
+          "body": {
+            "zh": "用政府素材頁的一項事實，然後解釋與題目有何關係。記住預算不是實際支出、計劃不是完成、預期節省不是已節省。不記得數字就保留準確政策名稱及方向；唔好作研究或比例。假設例子可用For example…could…，但仍要合理。",
+            "en": "Choose one fact from the government notes and explain its relevance. Estimates are not outturns, plans are not completed actions and projected savings are not achieved savings. If you cannot recall a number, retain the accurate policy and direction. Label reasonable hypothetical examples clearly."
+          },
+          "weak": "Research proves that government AI has already reduced all complaints by 30 per cent.",
+          "better": "In August 2026, the Digital Policy Office announced an Email Extraction project for 1823, with a projected reduction in manual data-entry time. This illustrates a specific efficiency objective rather than a proven reduction in complaints.",
+          "why": {
+            "zh": "原文預期改善的是輸入資料所需時間，唔係投訴數量。政策例子後要解釋，不能把引用當作整段論證。",
+            "en": "The expected improvement concerns data-entry time, not complaint numbers. Follow the example with analysis; a citation alone is not a developed argument."
+          }
+        },
+        {
+          "title": {
+            "zh": "④ 回應最強反方，唔好整個假敵人",
+            "en": "4. Respond to a strong objection, not a straw man"
+          },
+          "body": {
+            "zh": "支持AI仍可承認私隱、錯誤及轉型成本；支持控制開支仍可承認基層服務需要。先寫對方最合理的疑慮，再說明你的限制或替代方法如何處理。反方段不是突然轉軚，也不是一句However就算回應了。",
+            "en": "Supporters of AI can acknowledge privacy, errors and transition costs. Supporters of spending control can recognise essential service needs. Present the strongest reasonable objection, then explain how a limit or alternative addresses it. A counterargument is neither an unexplained change of stance nor simply the word however."
+          },
+          "weak": "Some people hate technology, but they are wrong.",
+          "better": "Critics reasonably worry that automated answers may mislead vulnerable users. This concern supports human review and accessible appeal routes, rather than an unrestricted rollout.",
+          "why": {
+            "zh": "認真接住風險，回應亦直接對應問題；人工覆核及申訴是本文建議，不是聲稱每個部門已有制度。",
+            "en": "It takes the risk seriously and proposes a directly relevant response. Review and appeal are recommendations here, not claims that every department already has them."
+          }
+        },
+        {
+          "title": {
+            "zh": "⑤ 公共政策要講取捨，唔好只喊好／壞",
+            "en": "5. Explain policy trade-offs instead of saying good or bad"
+          },
+          "body": {
+            "zh": "問四件事：誰得益、誰付代價、何時見效、點樣衡量。財政題可比較眼前節省與日後成本；數碼題可比較便利與未能上網者的需要。唔一定支持政府方案才有好論證，重點是立場可辯護、證據準確、反方處理公平。",
+            "en": "Ask who benefits, who bears the cost, when benefits arise and how success is measured. Compare immediate savings with later costs, or digital convenience with the needs of those unable to go online. A defensible position need not support the government proposal; reasoning, accurate evidence and fair treatment of objections matter."
+          },
+          "weak": "The government should cut every service because saving money is always good.",
+          "better": "Spending reviews should first identify duplication and weak outcomes, while protecting essential care whose removal could increase costs elsewhere.",
+          "why": {
+            "zh": "把政策目標、選擇準則與可能後果連起來；並沒有聲稱任何削支一定令成本上升。",
+            "en": "It connects the aim, selection criteria and possible consequences without claiming that every reduction necessarily raises later costs."
+          }
+        }
+      ],
+      "demonstration": {
+        "english": "AI could improve public services by reducing routine administrative work. When officers spend less time entering case details, they may have more time to investigate complex complaints. In August 2026, the Digital Policy Office announced an Email Extraction project for 1823, illustrating this efficiency objective. However, faster processing does not by itself establish better service: inaccurate records could cause delays or unfair treatment. The government should therefore test accuracy and total operating costs before expanding the system. This would make a gradual rollout more defensible than adopting AI simply because it is new.",
+        "notes": {
+          "zh": "首句有論點；第二句解釋機制；第三句給已核實政策例子；第四句指出限制；第五、六句回到應否擴大及實施條件。後半段是原創分析／建議，唔係官方成效報告。",
+          "en": "The first sentence states the point; the second explains the mechanism; the third supplies a verified example; the fourth identifies a limit; the final sentences return to expansion and its conditions. The latter part is our analysis and recommendation, not an official outcome report."
+        }
+      },
+      "checks": [
+        {
+          "zh": "首段有沒有直接回答指令及比較選項？",
+          "en": "Does the introduction answer the instruction and alternatives?"
+        },
+        {
+          "zh": "兩個理由是否不同，每個都有「如何／為何」？",
+          "en": "Are the two reasons distinct, with a mechanism for each?"
+        },
+        {
+          "zh": "例子是事實、預測還是假設？有沒有混淆？",
+          "en": "Is each example a fact, forecast or hypothetical case, and is the distinction clear?"
+        },
+        {
+          "zh": "反方是否合理，回應是否真正處理疑慮？",
+          "en": "Is the objection reasonable, and does the response actually address it?"
+        }
+      ],
+      "drill": {
+        "task": {
+          "zh": "把「Digital services are convenient. The government should replace all counters.」展開成三句：一個機制、一個使用者限制、一個有條件立場。",
+          "en": "Expand 'Digital services are convenient. The government should replace all counters.' into three sentences: a mechanism, a user limitation and a conditional position."
+        },
+        "answer": "Online applications may reduce travel and waiting time for residents who can use them. However, some older people and residents with disabilities may need personal assistance. Digital services should therefore expand alongside accessible support rather than automatically replace every counter.",
+        "explanation": {
+          "zh": "便利有了具體意思，限制有了對象，結論回應replace all，而不是只有一般科技背景。這是假設分析，沒有捏造香港實際使用比例。",
+          "en": "Convenience is specified, a group facing barriers is identified and the conclusion answers replace all. This is hypothetical reasoning, not an invented usage statistic."
+        }
+      }
+    },
+    {
+      "key": "language",
+      "title": {
+        "zh": "語言 40：先準確，再用熟悉複句與政策用字",
+        "en": "Language 40: accuracy first, then controlled variety and precise vocabulary"
+      },
+      "intro": {
+        "zh": "語言分唔只係英文深唔深，而係讀者能否準確理解你的理由。優先修會改變意思的錯誤，再改善重複、句式及文體。唔需要每句都長或塞滿學術字。",
+        "en": "Language is not a vocabulary contest: the reader must understand your reasoning accurately. Fix errors that distort meaning first, then improve repetition, sentence variety and style. Not every sentence needs to be long or academic."
+      },
+      "officialPrinciple": {
+        "zh": "官方描述重視準確而合適的句式、文法、標點、用字，以及符合文體的語氣。簡單句配受控複句，比硬用失控句式有效；不把這個建議當作官方分數換算。",
+        "en": "The descriptors value accurate, appropriate structures, grammar, punctuation, vocabulary and register. Clear simple sentences combined with controlled complex ones are more useful than forced complexity; this advice is not a conversion to official scores."
+      },
+      "blocks": [
+        {
+          "title": {
+            "zh": "① 先找每句主語與主要動詞",
+            "en": "1. Check the subject and main verb"
+          },
+          "body": {
+            "zh": "政策論述最常見是主動詞、單複數、情態動詞及冠詞。每句先確認誰做甚麼。should後接動詞原形，不能接to；information是不可數。英式英文中government可因語境採單數或集合用法，唔好機械地把所有複數用法判錯；重點是全文一致及意思清楚。",
+            "en": "Common issues concern main verbs, agreement, modals and articles. Identify who does what. Should takes a bare infinitive, and information is uncountable. In British English, government may have singular or collective agreement depending on context; do not mechanically mark all plural use wrong. Consistency and clarity matter."
+          },
+          "weak": "The proposal reduce costs and should to improve services.",
+          "better": "The proposal could reduce costs and improve services.",
+          "why": {
+            "zh": "could後用reduce與improve平行動詞，亦避免未有證據就保證實際效果。若寫已實現結果，則要有相應證據與時態。",
+            "en": "Could is followed by parallel bare infinitives, while the sentence avoids guaranteeing unverified outcomes. Claims about achieved results need suitable evidence and tense."
+          }
+        },
+        {
+          "title": {
+            "zh": "② 四種熟悉句式已經夠你靈活表達",
+            "en": "2. Use four familiar sentence patterns for controlled variety"
+          },
+          "body": {
+            "zh": "原因：because；讓步：although／while；條件：if／provided that；補充：which。先寫得正確，再決定需不需要複句。Although同but不要在同一主從句重複配對。句子有幾個意思時，可以拆開，唔等於低水平。",
+            "en": "Use because for reasons, although or while for concessions, if or provided that for conditions, and which for relevant detail. Get the sentence right before making it complex. Do not pair although with but in the same subordinate-main construction. Splitting several ideas into separate sentences is not a weakness."
+          },
+          "weak": "Although AI is useful, but it has risks and it can save time and the costs are high.",
+          "better": "Although AI may save staff time, implementation costs and error risks still require careful assessment.",
+          "why": {
+            "zh": "一個清楚讓步句取代多個and；說明哪兩個風險仍需評估，唔只係含糊has risks。",
+            "en": "One controlled concession replaces a chain of and clauses and identifies the issues requiring assessment."
+          }
+        },
+        {
+          "title": {
+            "zh": "③ 寫準確詞，不是寫最大隻字",
+            "en": "3. Choose precise words, not the longest ones"
+          },
+          "body": {
+            "zh": "常用搭配：allocate resources（分配資源）、protect essential services（保障基本服務）、maintain fiscal sustainability（維持財政可持續）、improve cost-effectiveness（改善成本效益）、bridge the digital divide（縮窄數碼鴻溝）。cost-effective不等於cheap：還要看相對成本帶來甚麼效果。",
+            "en": "Useful combinations include allocate resources, protect essential services, maintain fiscal sustainability, improve cost-effectiveness and bridge the digital divide. Cost-effective does not simply mean cheap: it concerns what outcomes are achieved relative to costs."
+          },
+          "weak": "The government should make the service very good and cheap.",
+          "better": "The government should improve cost-effectiveness without reducing access to essential services.",
+          "why": {
+            "zh": "good及cheap被換成可討論的準則：成本效益與服務可達性。只用你真正明白的詞，唔需要每句都改成政策術語。",
+            "en": "Vague good and cheap become evaluative criteria: cost-effectiveness and access. Use vocabulary you understand; not every sentence needs policy terminology."
+          }
+        },
+        {
+          "title": {
+            "zh": "④ 讓語氣與證據力度一致",
+            "en": "4. Match the strength of your wording to the evidence"
+          },
+          "body": {
+            "zh": "公告用announced／plans to；預算用is estimated to；可能結果用may／could；自己建議用should。不要將所有句子都寫成may而冇立場：立場可以堅定，但因果與成效需要審慎。避免always、all及prove等未受證據支持的絕對字眼。",
+            "en": "Use announced or plans to for an announcement, is estimated to for an estimate, may or could for a possible outcome and should for your recommendation. Do not hedge away your position: a firm recommendation can coexist with cautious causal claims. Avoid unsupported always, all and prove."
+          },
+          "weak": "The 1823 project has definitely saved 30 per cent of government spending.",
+          "better": "The announced Email Extraction project is expected to reduce manual data-entry time; its wider cost-effectiveness still needs evaluation.",
+          "why": {
+            "zh": "預期處理時間不能推成全政府開支的已實現節省，改寫修正了時間、範圍及語氣。",
+            "en": "An expected saving in data-entry time is not an achieved reduction in all government spending. The revision corrects time, scope and certainty."
+          }
+        },
+        {
+          "title": {
+            "zh": "⑤ 正式但唔僵硬；檢查最有用的幾項",
+            "en": "5. Be appropriately formal and check high-impact errors"
+          },
+          "body": {
+            "zh": "議論文可清楚寫I support／I partly agree，除非題目另有規定；唔需要扮成政府公函。避免gonna、super awesome等聊天語氣。最後分兩次看：先查漏答與立場，再查動詞、冠詞、單複數、標點及拼字。英式或美式拼字宜一致，唔因兩者其中一種而自動扣分。",
+            "en": "I support or I partly agree can be appropriate in an argumentative essay unless the task states otherwise; it need not sound like a government circular. Avoid casual expressions such as gonna or super awesome. Check task response and consistency first, then verbs, articles, agreement, punctuation and spelling. Keep British or American spelling broadly consistent rather than treating one variety as automatically wrong."
+          },
+          "weak": "This policy is super awesome and gonna fix everything.",
+          "better": "I support this policy if it improves access and can be delivered at a reasonable cost.",
+          "why": {
+            "zh": "直接而正式，有可檢驗條件；唔用空泛誇張代替論證。",
+            "en": "The revision is direct, appropriately formal and conditional, without unsupported exaggeration."
+          }
+        }
+      ],
+      "demonstration": {
+        "english": "While controlling expenditure is necessary, indiscriminate cuts may weaken services that prevent more costly problems. Community support, for example, can help some older residents remain at home. If that support is withdrawn, families may need to provide more unpaid care. The government should therefore compare immediate savings with possible costs to carers and other public services. This does not mean that every programme should be protected; resources should go to services with demonstrated value.",
+        "notes": {
+          "zh": "看while的讓步、if的條件，以及may／can／should各自的作用。community support不是萬能，some與possible避免將所有長者及後果一概而論。這是原創論證，不是已核實的節省成效。",
+          "en": "Notice the concession with while, the condition with if and the different functions of may, can and should. Some and possible prevent universal claims about older residents or consequences. This is an original argument, not a verified savings outcome."
+        }
+      },
+      "checks": [
+        {
+          "zh": "每句有沒有清楚主語及主要動詞？",
+          "en": "Does each sentence have a clear subject and main verb?"
+        },
+        {
+          "zh": "複句與標點是否受控，有沒有兩句硬用逗號黏起？",
+          "en": "Are clauses and punctuation controlled, without comma splices?"
+        },
+        {
+          "zh": "政策公告、預算、假設與建議有沒有用對語氣？",
+          "en": "Does the wording distinguish announcements, estimates, hypotheses and recommendations?"
+        },
+        {
+          "zh": "詞是否真的適切，文體與拼字是否大致一致？",
+          "en": "Are word choices appropriate, with broadly consistent register and spelling?"
+        }
+      ],
+      "drill": {
+        "task": {
+          "zh": "修正這兩句並保留原意：Although online services is convenient, but some resident need helps. The government should to keep telephone support.先處理文法，唔好改成另一個立場。",
+          "en": "Correct these sentences while preserving the position: Although online services is convenient, but some resident need helps. The government should to keep telephone support. Fix the grammar rather than changing the viewpoint."
+        },
+        "answer": "Although online services are convenient, some residents need help. The government should keep telephone support.",
+        "explanation": {
+          "zh": "services配are；移除多餘but；some residents用複數；need help中的help是不可數；should後無to。清楚改正已經有用，唔必然要加深字。",
+          "en": "Services takes are; remove redundant but; use plural residents; help is uncountable here; should takes no to. A clear correction is useful without adding sophisticated vocabulary."
+        }
+      }
+    },
+    {
+      "key": "organisation",
+      "title": {
+        "zh": "組織 30：讀者要知道每段在做甚麼",
+        "en": "Organisation 30: give every paragraph a clear job"
+      },
+      "intro": {
+        "zh": "組織唔係淨係有Firstly、Secondly、Finally。整篇要有方向，每段推進一件事，句與句的關係清楚。你可以用下面五段安排開始，但唔需要為追字數而硬塞第五段。",
+        "en": "Organisation is more than Firstly, Secondly and Finally. The whole essay needs direction, each paragraph advances one idea and sentences relate clearly. Use the five-paragraph plan as a starting point, not an obligation to pad the essay."
+      },
+      "officialPrinciple": {
+        "zh": "考評局重視符合文體而連貫的整體結構、有效分段及句段銜接。五段篇幅與PEEL是本網站的練習工具，唔係官方硬性格式。",
+        "en": "HKEAA values a coherent structure appropriate to the text type, effective paragraphing and cohesion. Our five-paragraph allocation and PEEL are practice tools, not compulsory official formats."
+      },
+      "blocks": [
+        {
+          "title": {
+            "zh": "① 首段落立場，尾段答返同一題",
+            "en": "1. Frame the position and return to the same task"
+          },
+          "body": {
+            "zh": "首段只用少量背景，接住就落立場及主要取捨。尾段綜合你的判斷和條件，不另開新政策，例如AI題最後唔好突然改成樓價分析。首尾唔必須逐字重複，但同意程度要一致。",
+            "en": "Keep background brief, then give the position and main trade-off. Conclude with the judgement and conditions already developed, not a new policy debate. Introduction and conclusion need not use identical words, but the degree of agreement should be consistent."
+          },
+          "weak": "Introduction: All government services should become digital. Conclusion: Most services should remain face-to-face, although I have not explained why.",
+          "better": "Introduction: Digital services should expand without removing essential personal support. Conclusion: A hybrid model would improve convenience while retaining access for residents who need assistance.",
+          "why": {
+            "zh": "首尾都支持有實體支援的數碼擴展，第二句收束第一句的條件，冇突然轉立場。",
+            "en": "Both statements support expansion with personal support. The conclusion develops the condition without reversing the position."
+          }
+        },
+        {
+          "title": {
+            "zh": "② 段落先定工作，避免每段重複同一理由",
+            "en": "2. Assign paragraph roles instead of repeating one reason"
+          },
+          "body": {
+            "zh": "先寫五個標籤：立場、理由一、理由二、反方及回應、結論。AI例：效率→可達性→風險及保障。財政例：真正低效開支→基本服務長期價值→收入方案負擔及回應。順序是讓讀者跟到你的比較，不是機械搬套句。",
+            "en": "Label the roles: position, first reason, second reason, objection and response, conclusion. For AI: efficiency, access, risks and safeguards. For finances: inefficiency, long-term service value, burdens of revenue measures and a response. Sequence should help the reader follow the comparison, not merely reuse a template."
+          },
+          "weak": "Paragraph 2: AI saves time. Paragraph 3: AI works faster. Paragraph 4: AI is efficient.",
+          "better": "Paragraph 2: administrative efficiency. Paragraph 3: access and digital exclusion. Paragraph 4: errors and privacy, with safeguards.",
+          "why": {
+            "zh": "三段各自回答不同考慮，不再用同義詞重複同一個觀點。",
+            "en": "Each paragraph addresses a different consideration rather than repeating one idea with synonyms."
+          }
+        },
+        {
+          "title": {
+            "zh": "③ 一段一焦點，例子之後要解釋",
+            "en": "3. Maintain paragraph focus and analyse the example"
+          },
+          "body": {
+            "zh": "用PEEL檢查：Point（論點）→Explanation（原因）→Example（例子）→Link（扣題）。不用每句都照四步，也可先解釋再補例子；但如果一段由AI跳去老人、樓市再跳稅務，通常需要刪除離題句或重新分段。",
+            "en": "Check Point, Explanation, Example and Link. The order is flexible and need not become four rigid sentences. If a paragraph jumps from AI to elderly care, property prices and taxes, remove irrelevant material or regroup it. Analyse the example instead of leaving it to speak for itself."
+          },
+          "weak": "AI saves time. Housing is expensive. Some people pay taxes. Older residents need care.",
+          "better": "AI may save time on routine records. These savings could allow staff to focus on complex cases. However, records must be checked to ensure that faster processing does not create avoidable errors.",
+          "why": {
+            "zh": "第二句的These savings接住第一句；第三句的records及faster processing繼續同一件事，唔係用Furthermore硬連無關主題。",
+            "en": "These savings points back to the first sentence. Records and faster processing continue the same argument instead of using Furthermore to join unrelated topics."
+          }
+        },
+        {
+          "title": {
+            "zh": "④ 連接詞要表達關係，唔好一味堆",
+            "en": "4. Make transitions express a real relationship"
+          },
+          "body": {
+            "zh": "because／therefore用於因果；however／while用於對比或讓步；for example用於例子；in addition用於同方向補充。如果前後沒有因果，加Therefore也不會突然有。也可用These savings、This approach等清楚回指，但it／this指向多個東西時要寫回名詞。",
+            "en": "Use because or therefore for causation, however or while for contrast or concession, for example for illustration, and in addition for related support. A connector cannot invent a causal link. Clear reference such as These savings or This approach helps, but replace ambiguous it or this with the relevant noun."
+          },
+          "weak": "AI can save time. Therefore, every resident can use online services.",
+          "better": "AI may improve administrative efficiency. Efficiency alone, however, does not ensure that every resident can access the service.",
+          "why": {
+            "zh": "效率不會直接證明人人可達；however正確帶出下一段公平使用的另一個角度。",
+            "en": "Efficiency does not establish universal access. However introduces the separate access issue instead of asserting a false consequence."
+          }
+        },
+        {
+          "title": {
+            "zh": "⑤ 留最後十分鐘，用逆向提綱找斷位",
+            "en": "5. Use a reverse outline in the final checking period"
+          },
+          "body": {
+            "zh": "每段旁邊寫一句「這段主要做甚麼」。兩段標籤一樣就檢查是否重複；某段無法一句概括就可能太散。然後查首尾立場、反方是否有回應、例子是否支持本段。字數不足時補機制或例子分析，不要堆背景；字數過多時先刪重複及無關句。",
+            "en": "Summarise each paragraph's job in one sentence. Repeated labels may reveal repetition; an impossible summary may reveal a scattered paragraph. Check the position, response to the objection and relevance of examples. If short, develop a mechanism or analyse evidence; if long, remove repetition and irrelevant material."
+          },
+          "weak": "Add three general sentences about how society is changing simply to reach 500 words.",
+          "better": "Explain who benefits, how the proposed change works and what condition is necessary for the benefit to arise.",
+          "why": {
+            "zh": "篇幅用來推進論證，而不是湊字。約500詞是練習設定，詞數本身唔會決定是否合格。",
+            "en": "Space develops the argument rather than padding it. Approximately 500 words is a practice setting; word count itself does not determine a pass."
+          }
+        }
+      ],
+      "demonstration": {
+        "english": "Efficiency is one reason to expand digital services, but access provides an important limit. Online applications may save travel time for users who can complete them independently. Residents with limited digital skills, however, may still need help understanding complex requirements. Keeping telephone or counter support would address this barrier without abandoning online services. A hybrid model therefore fits the aim of improving access better than assuming that every user has the same needs.",
+        "notes": {
+          "zh": "第一句把上段「效率」帶到本段「可達性」；第二、三句作真實邏輯對比；第四句回應障礙；最後一句扣返政策選擇。居民例子屬合理假設，不是本網站做過的調查。",
+          "en": "The opening bridges efficiency to access. The next sentences make a genuine contrast, the fourth answers the barrier and the final sentence returns to the policy choice. The resident example is a reasonable hypothetical case, not our own survey."
+        }
+      },
+      "checks": [
+        {
+          "zh": "只讀首句，讀者能否跟到整篇方向？",
+          "en": "Can a reader follow the essay's direction from the topic sentences?"
+        },
+        {
+          "zh": "每段是否有一個不同而清楚的工作？",
+          "en": "Does every paragraph have a distinct, clear role?"
+        },
+        {
+          "zh": "because／however／therefore的關係是否真實？",
+          "en": "Are the relationships signalled by because, however and therefore genuine?"
+        },
+        {
+          "zh": "結論有沒有只綜合已論證的內容，沒有另開新題？",
+          "en": "Does the conclusion synthesise developed points without starting a new debate?"
+        }
+      ],
+      "drill": {
+        "task": {
+          "zh": "把四句排成一段，並加一個合適連接詞：A. Personal support should therefore remain available. B. Some residents may need help completing complex forms. C. Online applications can reduce travel time. D. Convenience does not mean that every user can manage independently.",
+          "en": "Arrange these sentences as a paragraph and add a suitable transition: A. Personal support should therefore remain available. B. Some residents may need help completing complex forms. C. Online applications can reduce travel time. D. Convenience does not mean that every user can manage independently."
+        },
+        "answer": "Online applications can reduce travel time. However, convenience does not mean that every user can manage independently. Some residents may need help completing complex forms. Personal support should therefore remain available.",
+        "explanation": {
+          "zh": "C→D→B→A：先講好處，再指出限制，補具體使用者情況，最後提出對應支援。這是一個可用安排，不是唯一合法次序。",
+          "en": "C → D → B → A: benefit, limitation, a specific user situation and a relevant response. This is a workable sequence, not the only acceptable one."
+        }
+      }
+    }
+  ],
+  "essayStructure": [
+    {
+      "words": 70,
+      "title": {
+        "zh": "首段：背景一兩句＋有條件立場",
+        "en": "Introduction: brief context and a conditional position"
+      },
+      "starter": "I partly agree, but essential services should be protected."
+    },
+    {
+      "words": 130,
+      "title": {
+        "zh": "正文一：最主要理由＋機制＋例子",
+        "en": "Body 1: main reason, mechanism and example"
+      },
+      "starter": "One important reason is… This matters because…"
+    },
+    {
+      "words": 130,
+      "title": {
+        "zh": "正文二：另一個角度，唔好重複正文一",
+        "en": "Body 2: a genuinely different consideration"
+      },
+      "starter": "A separate concern is… For residents who…, this could…"
+    },
+    {
+      "words": 110,
+      "title": {
+        "zh": "反方：最合理疑慮＋承認＋回應",
+        "en": "Counterargument: strongest objection, concession and response"
+      },
+      "starter": "Critics reasonably argue that… While this concern is valid,…"
+    },
+    {
+      "words": 60,
+      "title": {
+        "zh": "結論：回答原題＋綜合條件",
+        "en": "Conclusion: answer the task and synthesise the conditions"
+      },
+      "starter": "On balance, I support… provided that…"
+    }
+  ],
+  "grammarRepairs": [
+    {
+      "weak": "The proposal reduce costs.",
+      "better": "The proposal reduces costs.",
+      "why": {
+        "zh": "單數proposal的現在式主要動詞用reduces；若講未確定成效，另可用may reduce。",
+        "en": "Singular proposal takes reduces in the present simple; use may reduce for an uncertain outcome."
+      }
+    },
+    {
+      "weak": "The government should to invest in training.",
+      "better": "The government should invest in training.",
+      "why": {
+        "zh": "should後用動詞原形，無to。",
+        "en": "Should takes a bare infinitive, without to."
+      }
+    },
+    {
+      "weak": "Informations are important.",
+      "better": "Reliable information is important.",
+      "why": {
+        "zh": "information在此不可數，配is。",
+        "en": "Information is uncountable here and takes is."
+      }
+    },
+    {
+      "weak": "Some resident need helps.",
+      "better": "Some residents need help.",
+      "why": {
+        "zh": "some residents用複數；need help的help不可數。",
+        "en": "Use plural residents; help is uncountable in this phrase."
+      }
+    },
+    {
+      "weak": "Although AI may save time, but it can make errors.",
+      "better": "Although AI may save time, it can make errors.",
+      "why": {
+        "zh": "Although引導從句後，不再用but引導同一主句。",
+        "en": "Do not add but to the main clause after although."
+      }
+    },
+    {
+      "weak": "Online services are convenient, some users need support.",
+      "better": "Online services are convenient, but some users need support.",
+      "why": {
+        "zh": "兩個獨立句不能只用逗號連接；這裡用but表達轉折，也可分成兩句。",
+        "en": "Avoid a comma splice; but expresses contrast here, or use two sentences."
+      }
+    },
+    {
+      "weak": "Increasing taxes can affect to households.",
+      "better": "Increasing taxes can affect households.",
+      "why": {
+        "zh": "affect作及物動詞直接接對象，不加to。",
+        "en": "Affect takes a direct object, without to."
+      }
+    },
+    {
+      "weak": "This policy will solve all problems.",
+      "better": "This policy may address some access barriers.",
+      "why": {
+        "zh": "原句文法不一定錯，但力度與範圍未有證據支持；改寫是用字及論證校準，不是文法規則。",
+        "en": "The original is not necessarily ungrammatical, but its certainty and scope lack support. This is calibration of wording and reasoning, not a grammar rule."
+      }
+    }
+  ],
+  "governmentTopics": [
+    {
+      "id": "A",
+      "title": {
+        "zh": "AI與公共服務：效率要連同準確及問責看",
+        "en": "AI and public services: assess accuracy and accountability alongside speed"
+      },
+      "facts": [
+        {
+          "sourceId": "gov-ai-1823",
+          "text": {
+            "zh": "2026年8月27日，數字政策辦公室公布1823四個AI效能提升項目：通話助理、電郵提取、部門回覆優先排序及儀表板；公告預期在年內推出。",
+            "en": "On 27 August 2026, the DPO announced four AI projects for 1823: Call Assistant, Email Extraction, reply prioritisation and Dashboard, expected to launch within the year."
+          }
+        },
+        {
+          "sourceId": "gov-ai-1823",
+          "text": {
+            "zh": "電郵提取的目標是將手動輸入資料時間減少30%；通話助理預期減少15%通話後工作時間。兩者是預期效益，公告沒有證明已達成。",
+            "en": "Email Extraction projected a 30% reduction in manual data-entry time, while Call Assistant projected 15% less after-call work time. These were expected benefits, not demonstrated achieved results."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "減少重複處理可讓職員集中複雜個案。論證仍要計採購、維護、培訓及覆核成本，用服務結果而非安裝系統數量衡量成功。這是分析及建議。",
+        "en": "Less repetitive work may free staff for complex cases. Account for procurement, maintenance, training and verification, and assess service outcomes rather than system counts. This is analysis and recommendation."
+      },
+      "objection": {
+        "zh": "最強疑慮是錯誤記錄、私隱及不公平處理。可主張先試低風險用途、限制資料使用及保留人工覆核；不能單用「科技進步」回答這些風險。",
+        "en": "Strong concerns include inaccurate records, privacy and unfair treatment. Recommend low-risk pilots, limited data use and human review; technological progress alone does not answer these risks."
+      },
+      "example": "The planned Email Extraction project for 1823 illustrates how AI could reduce routine administrative work. However, its projected time savings should not be confused with proven improvements in service quality. Expansion should depend on accurate records, effective human review and an assessment of total costs.",
+      "mistake": {
+        "zh": "不要寫「AI已減少全政府開支30%」或「1823投訴已減少30%」。原文的30%指預期手動資料輸入時間。",
+        "en": "Do not write that AI has cut all government spending or 1823 complaints by 30%. The percentage refers to projected manual data-entry time."
+      }
+    },
+    {
+      "id": "B",
+      "title": {
+        "zh": "公共財政：控制低效開支不等於一刀切民生",
+        "en": "Public finances: reducing inefficiency is not the same as blanket cuts"
+      },
+      "facts": [
+        {
+          "sourceId": "budget-fiscal",
+          "text": {
+            "zh": "2026–27預算案預計總開支8,434億港元，經常開支5,997億；醫療、社福及教育合共3,571億，約佔經常開支六成。這是預算數。",
+            "en": "The 2026–27 Budget estimated total expenditure at HK$843.4 billion and recurrent expenditure at HK$599.7 billion. Healthcare, welfare and education together accounted for HK$357.1 billion, about 60% of recurrent expenditure. These are estimates."
+          }
+        },
+        {
+          "sourceId": "budget-fiscal",
+          "text": {
+            "zh": "同一預算預計經營帳目盈餘119億、資本帳目赤字901億；計及發債1,600億及還債597億後，綜合盈餘為221億港元。不同帳目及債券處理口徑不可混用。",
+            "en": "It estimated an Operating Account surplus of HK$11.9 billion and a Capital Account deficit of HK$90.1 billion. After HK$160 billion in bond issuance and HK$59.7 billion in repayments, the estimated consolidated surplus was HK$22.1 billion. These accounting scopes are not interchangeable."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "可以支持財政紀律，同時反對不分成效的全面削減。先比較重疊行政、低效項目及基本服務，再評估收入方案的公平、經濟影響與行政成本；題目有rather than，必須比較兩邊。",
+        "en": "Support fiscal discipline while rejecting indiscriminate reductions. Compare duplication, weak programmes and essential services, then assess revenue options for fairness, economic effects and administrative costs. Rather than requires consideration of both sides."
+      },
+      "objection": {
+        "zh": "反方可指出加稅令家庭或企業負擔增加，值得認真回應。可主張透明評估、針對性措施及保障弱勢，而不是聲稱任何加稅都無害或任何削支都錯。",
+        "en": "A strong objection is that tax increases burden households or businesses. Recommend transparent assessment, targeting and protection for vulnerable residents, rather than claiming all taxes are harmless or all reductions are wrong."
+      },
+      "example": "Fiscal sustainability requires more than reducing expenditure indiscriminately. The 2026–27 Budget allocates substantial recurrent resources to healthcare, welfare and education, illustrating the importance of these services. Reviews should identify weak outcomes and duplication, while revenue proposals should be assessed for fairness and economic effects.",
+      "mistake": {
+        "zh": "不要把計及發債後的綜合盈餘寫成「完全沒有融資需要」，也不要把經常開支與總開支當同一數。借款不等於稅收。",
+        "en": "A consolidated surplus after bonds does not establish that no financing is needed. Recurrent and total expenditure are different, and borrowing is not tax revenue."
+      }
+    },
+    {
+      "id": "C",
+      "title": {
+        "zh": "長者照顧：社區與院舍可互補，不能人人一樣",
+        "en": "Elderly care: community and residential care can be complementary"
+      },
+      "facts": [
+        {
+          "sourceId": "budget-elderly",
+          "text": {
+            "zh": "2026–27預算案提出社區照顧服務券增加4,000張至16,000張，院舍照顧服務券增加1,000張至7,000張。這是預算案提出的安排，並非本網站核實的實際派發總數。",
+            "en": "The 2026–27 Budget set out an increase of 4,000 community care vouchers to 16,000 and 1,000 residential care vouchers to 7,000. These are announced arrangements, not a distribution total independently verified by this site."
+          }
+        },
+        {
+          "sourceId": "gov-health-integration",
+          "text": {
+            "zh": "2026年8月18日公布長者健康服務分階段整合，首階段由10月5日開始。完成整合後服務點預計由18增至超過100，服務容量增至每年超過12萬名長者；不要說10月3日已全部達成。",
+            "en": "On 18 August 2026, phased elderly health service integration was announced, with the first phase starting on 5 October. After completion, service points were expected to rise from 18 to over 100, and annual capacity to more than 120,000 older people; do not state that this was all achieved by 3 October."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "社區支援可讓部分長者留在熟悉環境，亦可支援照顧者。政府提出同時增加兩類服務券，適合引出按照顧需要及家庭能力作分流，不是單純取消院舍。健康服務整合是基層醫療例子，唔等於全面取代長期照顧。",
+        "en": "Community support may help some older people remain in familiar surroundings and support carers. Proposed expansion of both voucher types illustrates needs-based care rather than eliminating residential options. Primary healthcare integration is not a complete substitute for long-term care."
+      },
+      "objection": {
+        "zh": "需要高強度照顧、沒有合適家居或照顧者的長者，未必適合只靠社區服務。可主張較多社區支援，同時保留適切院舍及專業照顧；不能把成本及照顧工作全部轉給家人。",
+        "en": "Those needing intensive care, suitable housing or a carer may not be served by community support alone. Recommend more community capacity alongside appropriate residential and professional care, without simply shifting costs and work to families."
+      },
+      "example": "Hong Kong's 2026–27 Budget proposed increases in both community and residential care vouchers. This supports considering the two options as complementary rather than mutually exclusive. Greater community support may suit some older people, but residential care remains important where care needs or household circumstances make staying at home unsuitable.",
+      "mistake": {
+        "zh": "不要混淆照顧服務券與長者健康中心服務；不同政策可支持同一論題，但必須講清各自功能。預計擴容量不代表醫院成本已證實下降。",
+        "en": "Do not confuse care vouchers with Elderly Health Centre services. They may inform the same debate but have different functions. Planned capacity expansion does not prove a realised reduction in hospital costs."
+      }
+    },
+    {
+      "id": "D",
+      "title": {
+        "zh": "數碼政府與共融：服務應多一個入口，不多一個門檻",
+        "en": "Digital government and inclusion: add access, not barriers"
+      },
+      "facts": [
+        {
+          "sourceId": "gov-digital-inclusion",
+          "text": {
+            "zh": "2026年4月20日公布新一輪「Smart Silver」長者進階數碼培訓接受報名，60歲或以上並有基本數碼知識的長者可免費參加。",
+            "en": "On 20 April 2026, a new Smart Silver enriched ICT training round opened for enrolment, free for people aged 60 or above with basic digital knowledge."
+          }
+        },
+        {
+          "sourceId": "gov-digital-inclusion",
+          "text": {
+            "zh": "課程涵蓋AI、智能助理、數碼支付及網絡安全等；公告預期兩年內提供逾170班、惠及逾4,000人。這是計劃的預期覆蓋，不是所有長者的實際使用能力。",
+            "en": "Courses cover AI, smart assistants, digital payments and cybersecurity, among other topics. The announcement expected over 170 classes and more than 4,000 beneficiaries over two years; this is projected programme reach, not universal digital proficiency."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "網上申請可減少交通及輪候，培訓則可改善部分人的使用能力。要比較市民需要，而非只比較系統成本。可提出易用介面、無障礙設計、電話協助及面對面支援並行；這些是作文建議。",
+        "en": "Online applications may reduce travel and waiting, while training can help some users gain skills. Compare residents' needs, not just system costs. Propose usable interfaces, accessibility, telephone help and personal support together; these are essay recommendations."
+      },
+      "objection": {
+        "zh": "數碼優先可讓服務更一致，但不是每人已有裝置、網絡、讀寫能力或培訓資格。培訓對象要求基本知識，恰好提醒我們不能假定所有使用者已經準備好。",
+        "en": "Digital-first delivery may improve consistency, but not everyone has a device, connectivity, literacy or programme eligibility. Requiring basic knowledge for training is a reason not to assume all users are already ready."
+      },
+      "example": "The Smart Silver training round announced in April 2026 shows that digital skills require active support. However, courses aimed at older people with basic digital knowledge do not establish that every resident can use online government services independently. Expansion should therefore retain accessible assistance for users who face additional barriers.",
+      "mistake": {
+        "zh": "不要把舊2024–26一輪培訓寫成仍在進行；新資料引用2026年4月公告，也不要寫「所有長者已完成培訓」。",
+        "en": "Do not describe the old 2024–26 training round as still active. Cite the April 2026 announcement for the new round, and do not claim all older people have completed training."
+      }
+    },
+    {
+      "id": "E",
+      "title": {
+        "zh": "錯誤資訊與表達：辨識、澄清及教育也可防害",
+        "en": "Misinformation and expression: verification, correction and education also matter"
+      },
+      "facts": [
+        {
+          "sourceId": "gov-information-literacy",
+          "text": {
+            "zh": "2026年1月21日的立法會書面答覆指出，教育局以2024年「香港學生資訊素養」學習架構，協助學生評估資訊及媒體內容，並理解網上自我保護。",
+            "en": "A written Legislative Council reply on 21 January 2026 described the Education Bureau's 2024 Information Literacy for Hong Kong Students framework, which helps students evaluate information and media content and understand online self-protection."
+          }
+        },
+        {
+          "sourceId": "gov-information-literacy",
+          "text": {
+            "zh": "答覆提到跨科學習、教師發展及家長教育支援。這項資料支持討論教育與辨識能力，但本身不是刪帖權力、法院裁決或言論限制法例。",
+            "en": "The reply describes cross-curricular learning, teacher development and parent support. It informs arguments about education and evaluation skills, but is not a content-removal power, court decision or speech-restriction law."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "可支持防止具體傷害，同時主張比例原則：澄清可查證錯誤、提高資訊素養、區分欺詐或危險錯誤與合理意見分歧。教育例子提供一條不只靠刪帖的路線。",
+        "en": "Support preventing concrete harm while recommending proportionate responses: correcting verifiable falsehoods, improving literacy and distinguishing fraud or dangerous misinformation from reasonable disagreement. The education example illustrates an approach beyond content removal."
+      },
+      "objection": {
+        "zh": "反方會問：誰判定真偽？錯誤標記會否壓低合理討論？可建議透明準則、可核對證據及覆核渠道。另要承認教育需時，急迫危險資訊可能要更快處理；兩邊都不能省略。",
+        "en": "An objection concerns who decides what is false and whether mislabelling suppresses legitimate discussion. Propose transparent criteria, checkable evidence and review. Also acknowledge that education takes time and urgent harmful claims may require quicker action."
+      },
+      "example": "The Education Bureau's information literacy work illustrates a preventive response to misinformation. Helping people evaluate sources may reduce susceptibility to false claims without treating every disagreement as a harmful statement. Nevertheless, educational measures should be complemented by timely corrections where inaccurate information creates a concrete risk.",
+      "mistake": {
+        "zh": "不要說「2026年推出新架構」：答覆日期是2026年，架構是2024年。也不要用教育政策例子證明政府已有任何未核實的全面刪帖法例。",
+        "en": "Do not call it a new 2026 framework: the reply is from 2026 but the framework is from 2024. An education example does not establish any unverified blanket content-removal law."
+      }
+    },
+    {
+      "id": "F",
+      "title": {
+        "zh": "即時民生與長期基建：比較效益時間、風險與機會成本",
+        "en": "Immediate services and infrastructure: compare timing, risk and opportunity cost"
+      },
+      "facts": [
+        {
+          "sourceId": "budget-capital",
+          "text": {
+            "zh": "2026–27預算案第266段預計工務開支約1,280億港元，並預計中期預測期間維持相若水平。工務開支不是全部政府開支，也不是所有資本開支。",
+            "en": "Paragraph 266 of the 2026–27 Budget estimated capital works expenditure at about HK$128 billion, with a similar level over the medium-range forecast. Capital works is neither all government expenditure nor the whole Capital Account."
+          }
+        },
+        {
+          "sourceId": "budget-capital",
+          "text": {
+            "zh": "第269段說明發債所得只用於投資基建，不用於政府經常開支。第268段亦提到部分發債用於再融資；借款不是沒有代價的收入。",
+            "en": "Paragraph 269 states that bond proceeds are for infrastructure investment, not government recurrent expenditure. Paragraph 268 also discusses refinancing; borrowing is not cost-free revenue."
+          }
+        }
+      ],
+      "argument": {
+        "zh": "基本服務處理眼前需要，交通及防洪等基建則可能改善長期韌性與生產力。應逐項比較必要性、需求、全生命成本及延誤風險；不能因為長期就自動否定，也不能因為基建就自動有高回報。這些例子是分析，不是宣布新增項目。",
+        "en": "Essential services meet immediate needs, while transport or flood-protection infrastructure may improve long-term resilience and productivity. Assess necessity, demand, lifetime costs and delay risks project by project. Long-term is not automatically bad, and infrastructure is not automatically high-return. These are analytical examples, not new project announcements."
+      },
+      "objection": {
+        "zh": "反方可指出大型項目有超支、回報延遲及擠壓其他用途的風險。可主張分階段、透明成本效益評估及保護基本服務底線，而不是把所有基建全停或全保。",
+        "en": "Strong objections include overruns, delayed benefits and the loss of alternative uses for funds. Propose phasing, transparent appraisal and protection for essential services, rather than stopping or protecting every project indiscriminately."
+      },
+      "example": "Hong Kong's 2026–27 Budget estimated capital works expenditure at about HK$128 billion. This shows the scale of the investment decision, not that every project will generate sufficient benefits. The government should assess demand, lifetime costs and opportunity costs while ensuring that urgent public needs remain adequately supported.",
+      "mistake": {
+        "zh": "不要將發債安排寫成「政府可直接用借款無限支付經常服務」，也不要把「預計支出」當作已證實經濟回報。",
+        "en": "Do not describe the announced bond policy as unlimited borrowing for recurrent services, or mistake estimated expenditure for proven economic returns."
+      }
     }
   ]
 }

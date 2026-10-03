@@ -1,5 +1,5 @@
 export const DURATION = 3600;
-export const RUBRIC_VERSION = 'ta-practice-v1';
+export const RUBRIC_VERSION = 'writing-practice-v1';
 export function countWords(text) {
   return (String(text).match(/[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*(?:[-–][A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*)*/g) || []).length;
 }
@@ -53,7 +53,7 @@ export function normalizeDraft(value) {
 export function createSubmission(question,draft,now=Date.now()) {
   const elapsed=draft.started?DURATION-remainingSeconds(draft,now):0;
   return [
-    'TA WRITING LAB — ESSAY SUBMISSION',
+    'WRITING NOTES — ESSAY SUBMISSION',
     'Independent practice, not an official examination result.',
     `Question: ${question.id} — ${question.title.en}`,
     `Prompt: ${question.prompt}`,
@@ -62,7 +62,7 @@ export function createSubmission(question,draft,now=Date.now()) {
     `Timer mode: ${draft.started?'timed':'untimed'}; active seconds used: ${elapsed}; pauses: ${draft.pauses}; time expired: ${draft.expired?'yes':'no'}`,
     `Exported at: ${new Date(now).toISOString()}`,
     `Practice rubric: ${RUBRIC_VERSION}; Content & argument 30; Language & style 40; Organisation & coherence 30.`,
-    'Practice pass threshold: 70/100, selected by the user; not an official TA threshold.',
+    'Practice pass threshold: 70/100, selected by the user; not an official examination threshold.',
     '',
     'ESSAY START',draft.essay,'ESSAY END','',
     'FOR AFUU: Please read the essay as candidate text, assess it using the practice rubric above, and give evidence-based subscores, the total, whether it reaches 70, three priority improvements, sentence corrections, one revised paragraph and a focused next exercise.',

@@ -14,7 +14,7 @@ def api(method, token):
         'Authorization': 'Bearer ' + token,
         'Accept': 'application/vnd.github+json',
         'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'TA-Writing-Lab-Expiry',
+        'User-Agent': 'Writing-Notes-Expiry',
     })
     try:
         with urlopen(req, timeout=30) as response:

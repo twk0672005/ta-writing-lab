@@ -1,7 +1,7 @@
-import {countWords,newDraft,normalizeDraft,remainingSeconds,startTimer,pauseTimer,finishTimer,resetTimer,clockText,createSubmission} from './core.js';
+import {countWords,newDraft,normalizeDraft,remainingSeconds,startTimer,pauseTimer,finishTimer,resetTimer,clockText,createSubmission} from './core.js?v=2';
 
 const KEY='ta-writing-lab-v1';
-const VIEWS=['study','practice','models','grading'];
+const VIEWS=['study','government','practice','models','grading'];
 let data, state, storageOK=true, modelId='A';
 const $=(selector)=>document.querySelector(selector);
 const t=(key)=>data?.ui[key]?.[state?.lang||'zh']||key;
@@ -23,7 +23,39 @@ function text(tag,key,cls=''){return E(tag,{class:cls},t(key));}
 function linkButton(key,view,primary=true){return E('a',{class:`button ${primary?'primary':'secondary'}`,href:`#${view}`},t(key));}
 function header(title,lead){return [text('span','unofficial','eyebrow'),text('h1',title),text('p',lead,'lead')];}
 function sectionHeading(title,number){return E('div',{class:'section-heading'},text('h2',title),E('span',{class:'section-number','aria-hidden':'true'},number));}
-function sourceCard(source){return E('article',{class:'source-card'},E('h3',{},loc(source.title)),E('p',{},loc(source.note)),E('a',{href:source.url,target:'_blank',rel:'noopener noreferrer'},t('openSource')));}
+function sourceCard(source){return E('article',{class:'source-card'},E('h3',{},loc(source.title)),E('p',{},loc(source.note)),source.date?E('p',{class:'small muted'},t('sourceDate')+': '+source.date):null,E('a',{href:source.url,target:'_blank',rel:'noopener noreferrer'},t('openSource')));}
+function examplePair(item){
+ return E('div',{class:'example-pair'},E('div',{},text('p','weakExample','example-label'),E('p',{class:'example weak-example',lang:'en'},item.weak)),E('div',{},text('p','betterExample','example-label'),E('p',{class:'example better-example',lang:'en'},item.better)));
+}
+function writingGuides(){
+ const stack=E('div',{class:'guide-stack'});
+ for(const guide of data.writingGuides){
+  const panel=E('details',{class:'writing-guide','data-guide-key':guide.key},E('summary',{},loc(guide.title)),E('p',{class:'guide-intro'},loc(guide.intro)),E('p',{class:'notice'},E('strong',{},t('officialPrinciple')+': '),loc(guide.officialPrinciple)));
+  for(const block of guide.blocks)panel.append(E('section',{class:'guide-block'},E('h3',{},loc(block.title)),E('p',{},loc(block.body)),examplePair(block),E('p',{class:'small'},E('strong',{},t('whyBetter')+': '),loc(block.why))));
+  if(guide.key==='language')panel.append(E('section',{class:'guide-block'},text('h3','grammarTitle'),E('div',{class:'repair-grid'},data.grammarRepairs.map(item=>E('article',{'data-repair':'',class:'repair-card'},examplePair(item),E('p',{class:'small'},loc(item.why)))))));
+  if(guide.key==='organisation')panel.append(E('section',{class:'guide-block'},text('h3','structureTitle'),text('p','structureNote','small muted'),E('ol',{class:'structure-list'},data.essayStructure.map(item=>E('li',{},E('strong',{},loc(item.title)),E('span',{class:'word-allocation'},state.lang==='zh'?`約${item.words}詞`:`about ${item.words} words`),E('p',{class:'example',lang:'en'},item.starter))))));
+  panel.append(E('section',{class:'guide-block'},text('h3','workedParagraph'),E('p',{class:'example worked-paragraph',lang:'en'},guide.demonstration.english),E('p',{class:'small'},loc(guide.demonstration.notes))),E('section',{class:'guide-block'},text('h3','selfCheck'),E('ul',{class:'check-list'},guide.checks.map(item=>E('li',{},loc(item))))),E('section',{class:'guide-block short-drill'},text('h3','shortDrill'),E('p',{},loc(guide.drill.task)),E('details',{class:'answer-details'},text('summary','suggestedAnswer'),E('p',{class:'example',lang:'en'},guide.drill.answer),E('p',{class:'small'},loc(guide.drill.explanation)))));
+  stack.append(panel);
+ }
+ return stack;
+}
+function renderGovernment(){
+ const notes=E('div',{class:'government-notes'});
+ const jumps=E('div',{class:'topic-jumps',role:'group','aria-label':t('government')});
+ for(const topic of data.governmentTopics){
+  const card=E('details',{class:'government-note','data-gov-id':topic.id},E('summary',{},E('span',{class:'topic-letter','aria-hidden':'true'},topic.id),loc(topic.title)));
+  if(topic.id==='A')card.open=true;
+  const facts=E('section',{class:'guide-block'},text('h3','factsLabel'));
+  for(const fact of topic.facts){
+   const source=data.sources.find(item=>item.id===fact.sourceId);
+   facts.append(E('div',{class:'fact'},E('p',{},loc(fact.text)),E('p',{class:'source-reference small'},E('a',{href:source.url,target:'_blank',rel:'noopener noreferrer'},loc(source.title)+' ↗'),E('span',{},' · '+source.date))));
+  }
+  card.append(facts,E('section',{class:'guide-block'},text('h3','argumentLabel'),E('p',{},loc(topic.argument))),E('section',{class:'guide-block'},text('h3','objectionLabel'),E('p',{},loc(topic.objection))),E('section',{class:'guide-block'},text('h3','usageLabel'),E('p',{class:'example worked-paragraph',lang:'en'},topic.example)),E('p',{class:'notice'},E('strong',{},t('avoidLabel')+': '),loc(topic.mistake)),E('button',{class:'button primary',type:'button',onclick:()=>{state.topic=topic.id;persist();location.hash='practice';}},t('topicPractice')));
+  notes.append(card);
+  jumps.append(E('button',{type:'button',class:'button secondary',onclick:()=>{card.open=true;card.scrollIntoView({block:'start'});card.querySelector('summary').focus({preventScroll:true});}},topic.id+' / '+loc(data.questions.find(item=>item.id===topic.id).title)));
+ }
+ $('#government').replaceChildren(...header('governmentTitle','governmentLead'),jumps,notes);
+}
 function topicField(id){
  const select=E('select',{id,onchange:(event)=>{state.topic=event.target.value;persist();render();}});
  for(const q of data.questions){const option=E('option',{value:q.id},`${q.id} / ${loc(q.title)}`);option.selected=q.id===state.topic;select.append(option);}
@@ -50,15 +82,16 @@ function renderStudy(){
   if(i===0) details.open=true;
   lessons.append(details);
  });
- const official=E('div',{class:'section-block'},sectionHeading('officialTitle','02'),text('p','officialNote','notice'),E('div',{class:'source-grid'},data.sources.slice(0,3).map(sourceCard)));
+ const guideSection=E('div',{class:'section-block'},sectionHeading('guideTitle','02'),text('p','guideLead','lead'),writingGuides());
+ const official=E('div',{class:'section-block'},sectionHeading('officialTitle','03'),text('p','officialNote','notice'),E('div',{class:'source-grid'},data.sources.slice(0,3).map(sourceCard)));
  const outlines=E('div',{class:'outline-grid'});
  for(const key of ['stance','reason1','reason2','counter']){
   const input=E('textarea',{id:`plan-${key}`,rows:'3',placeholder:t('planPlaceholder'),oninput:(event)=>{current().outline[key]=event.target.value;persist();}});input.value=current().outline[key];
   outlines.append(E('div',{class:'field'},E('label',{for:`plan-${key}`},t(key)),input));
  }
- const warmup=E('div',{class:'section-block warmup'},sectionHeading('warmupTitle','03'),text('p','warmupLead','small muted'),topicField('study-topic'),E('p',{class:'example',lang:'en'},question().prompt),outlines,E('div',{class:'button-row'},linkButton('startPractice','practice')),saveStateNode());
- const sources=E('div',{class:'section-block'},sectionHeading('sourcesTitle','04'),E('div',{class:'source-grid'},data.sources.slice(3).map(sourceCard)));
- $('#study').replaceChildren(hero,E('div',{class:'section-block'},sectionHeading('lessonTitle','01'),lessons),official,warmup,sources);
+ const warmup=E('div',{class:'section-block warmup'},sectionHeading('warmupTitle','04'),text('p','warmupLead','small muted'),topicField('study-topic'),E('p',{class:'example',lang:'en'},question().prompt),outlines,E('div',{class:'button-row'},linkButton('startPractice','practice')),saveStateNode());
+ const sources=E('div',{class:'section-block'},sectionHeading('sourcesTitle','05'),E('div',{class:'source-grid'},data.sources.slice(3).map(sourceCard)));
+ $('#study').replaceChildren(hero,E('p',{class:'review-route'},t('reviewRoute')),E('div',{class:'button-row'},linkButton('governmentCta','government',false)),E('div',{class:'section-block'},sectionHeading('lessonTitle','01'),lessons),guideSection,official,warmup,sources);
 }
 function updateTimer(){
  const d=current();const remaining=remainingSeconds(d);
@@ -112,16 +145,16 @@ function renderGrading(){
  const steps=E('div',{},text('h2','submitStepsTitle'),E('ol',{},['submitStep1','submitStep2','submitStep3'].map(key=>text('li',key))));
  const feedback=E('div',{},text('h2','feedbackTitle'),text('p','feedback','small'),linkButton('startPractice','practice'));
  const source=data.sources.find(s=>s.id==='hkeaa-descriptors');
- $('#grading').replaceChildren(...header('gradingTitle','gradingLead'),text('p','practiceThreshold','threshold'),text('p','rubricNote','notice'),E('div',{class:'rubric-grid'},cards),E('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'small'},loc(source.title)+' ↗'),E('div',{class:'submission-steps'},steps,feedback));
+ $('#grading').replaceChildren(...header('gradingTitle','gradingLead'),text('p','practiceThreshold','threshold'),text('p','rubricNote','notice'),E('div',{class:'rubric-grid'},cards),E('a',{href:source.url,target:'_blank',rel:'noopener noreferrer',class:'small'},loc(source.title)+' ↗'),E('div',{class:'section-block'},text('h2','guideTitle'),writingGuides()),E('div',{class:'submission-steps'},steps,feedback));
 }
 function updateLocale(){
  document.documentElement.lang=state.lang==='zh'?'zh-Hant-HK':'en';
- document.title=state.lang==='zh'?'TA 寫作練習室 · 先溫習，再寫作':'TA Writing Lab · Study, write, improve';
+ document.title=state.lang==='zh'?'寫作筆記 · 先溫習，再寫作':'Writing Notes · Study, write, improve';
  document.querySelectorAll('[data-i18n]').forEach(n=>n.textContent=t(n.dataset.i18n));
  document.querySelectorAll('[data-lang]').forEach(n=>n.setAttribute('aria-pressed',String(n.dataset.lang===state.lang)));
 }
 function render(){
- updateLocale();renderStudy();renderPractice();renderModels();renderGrading();
+ updateLocale();renderStudy();renderGovernment();renderPractice();renderModels();renderGrading();
  const view=activeView();for(const key of VIEWS)$(`#${key}`).hidden=key!==view;
  document.querySelectorAll('[data-view]').forEach(n=>{if(n.dataset.view===view)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current');});
  updateSaveState();
@@ -129,7 +162,7 @@ function render(){
 function download(){
  if(!current().essay.trim())return;
  const blob=new Blob(['\uFEFF',createSubmission(question(),current())],{type:'text/plain;charset=utf-8'});
- const url=URL.createObjectURL(blob);const anchor=E('a',{href:url,download:`TA-essay-${state.topic}-${new Date().toISOString().slice(0,10)}.txt`});
+ const url=URL.createObjectURL(blob);const anchor=E('a',{href:url,download:`writing-essay-${state.topic}-${new Date().toISOString().slice(0,10)}.txt`});
  document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);
  $('#delivery-status').textContent=t('downloaded');
  const visibleStatus=$('#practice-delivery-status');if(visibleStatus)visibleStatus.textContent=t('downloaded');
@@ -145,7 +178,7 @@ function tick(){
 async function boot(){
  try{
   const response=await fetch('./content.json',{cache:'no-cache'});if(!response.ok)throw new Error('Content unavailable');data=await response.json();
-  if(data.version!=='1.0.0'||!Array.isArray(data.questions)||data.questions.length!==6)throw new Error('Invalid content');
+  if(data.version!=='1.1.0'||!Array.isArray(data.questions)||data.questions.length!==6||!Array.isArray(data.writingGuides)||data.writingGuides.length!==3||!Array.isArray(data.governmentTopics)||data.governmentTopics.length!==6)throw new Error('Invalid content');
   state=restore();$('#loading').hidden=true;render();tick();
   window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0);});
   document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{state.lang=button.dataset.lang;persist();render();}));
@@ -155,7 +188,7 @@ async function boot(){
   window.matchMedia('(max-width:760px)').addEventListener('change',()=>renderPractice());
   window.addEventListener('beforeunload',()=>persist());setInterval(tick,250);
  }catch{
-  $('#loading').textContent='內容未能載入，請重新整理；也可先下載PDF。 Material could not load. Refresh or download the PDF.';
+  $('#loading').textContent='內容未能載入，請重新整理；請勿清除已有草稿的瀏覽器資料。 Material could not load. Refresh without clearing browser data containing drafts.';
  }
 }
 boot();

@@ -43,7 +43,7 @@ test('malformed storage has safe defaults',()=>{
 });
 test('export preserves question and exact essay, labels no auto grading',()=>{
  const d=newDraft();d.essay='<script>alert(1)</script>\nMy original text.';const result=createSubmission(content.questions[0],d,100000);
- assert.ok(result.includes(content.questions[0].prompt));assert.ok(result.includes(d.essay));assert.ok(result.includes('70/100'));assert.ok(result.includes('not an official TA threshold'));assert.ok(result.includes('untimed'));
+ assert.ok(result.includes(content.questions[0].prompt));assert.ok(result.includes(d.essay));assert.ok(result.includes('70/100'));assert.ok(result.includes('not an official examination threshold'));assert.ok(result.includes('untimed'));
  assert.ok(result.includes('No automatic submission or grading has occurred.'));
 });
 test('clock never goes negative and zero is visible',()=>{assert.equal(clockText(3600),'60:00');assert.equal(clockText(0),'00:00');assert.equal(clockText(-10),'00:00');});
