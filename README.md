@@ -30,7 +30,7 @@ Official implementation reference: [Google: block indexing with noindex](https:/
 
 ## Temporary publication
 
-The Pages site is scheduled to be unpublished on **5 October 2026 at 23:00 Hong Kong time (15:00 UTC)**, with source code retained. Scheduled jobs can be delayed. The existing repository-scoped expiry workflow is unchanged; a dry run is not proof of a completed future unpublish.
+The Pages site is scheduled to be unpublished on **5 October 2026 at 23:00 Hong Kong time (15:00 UTC)**, with source code retained. Scheduled jobs can be delayed. The original attempt failed at DELETE with HTTP 403. The repair requires a repository-scoped credential with both Pages write and Administration write; the workflow GITHUB_TOKEN cannot grant Administration. A dry run or successful Actions job is not proof of completed unpublication. See [expiry operations and evidence](docs/PAGES_EXPIRY.md).
 
 ## Run and test
 

@@ -55,7 +55,9 @@ test('browser boot validation matches the generated content revision',()=>{
  assert.ok(read('app.js').includes(`data.version!=='${content.version}'`));
  assert.equal(content.version,'1.1.0');
 });
-test('draft storage and scheduled expiry remain unchanged',()=>{
+test('draft storage and deadline remain unchanged; expired annual cron is retired',()=>{
  assert.ok(read('app.js').includes("const KEY='ta-writing-lab-v1'"));
- assert.equal(content.expiry,'2026-10-05T15:00:00Z');assert.ok(read('.github/workflows/expire.yml').includes('0 15 5 10 *'));
+ assert.equal(content.expiry,'2026-10-05T15:00:00Z');
+ assert.ok(!read('.github/workflows/expire.yml').includes('cron:'));
+ assert.ok(read('.github/workflows/expire.yml').includes('workflow_dispatch:'));
 });

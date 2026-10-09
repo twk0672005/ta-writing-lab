@@ -1,0 +1,101 @@
+{
+  "result": "HOLD",
+  "reason": "Public website returns HTTP 200; authenticated Pages administration unavailable. Anonymous API 404 is not accepted as proof.",
+  "checks": [
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.856294+00:00",
+      "url": "https://api.github.com/repos/twk0672005/ta-writing-lab/pages",
+      "authentication": "anonymous",
+      "http_status": 404,
+      "final_url": "https://api.github.com/repos/twk0672005/ta-writing-lab/pages",
+      "sha256": "563d97060c2459a0ff950c9fdf8d97e70237ccbc433002dd0c4bd5be7680f166",
+      "request_id": "3FAC:9F25:1A962D6:56D25EF:6AC938B3"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:48.017217+00:00",
+      "url": "https://api.github.com/repos/twk0672005/ta-writing-lab/commits/main",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/twk0672005/ta-writing-lab/commits/main",
+      "sha256": "c722a9d635d58206f913ff7ce1ae12a8a2588d83f6b183394559b01dc492c62d",
+      "request_id": "3FB2:2772F9:193A1DC:523F21D:6AC938B3",
+      "main_sha": "fa3beeeea13509a962e41620b8ae91c05ab799e1"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.387138+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/",
+      "sha256": "db30524ed982a5f7e6c2b437032efc740123c8869f3582fc9d6f5de86127cf90",
+      "request_id": "FB5E:3748F5:765FD4:7D1D42:6AC93819"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.379555+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/index.html",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/index.html",
+      "sha256": "db30524ed982a5f7e6c2b437032efc740123c8869f3582fc9d6f5de86127cf90",
+      "request_id": "DB38:41E56:7773F6:7E411E:6AC938B1"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.498990+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/app.js",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/app.js",
+      "sha256": "4f38cef627356d4d8230fa030b9818a19ce5f911f8566c326419766c89cf4060",
+      "request_id": "BD1E:1A8A16:7E9DE7:8568ED:6AC938B3"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.441470+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/core.js",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/core.js",
+      "sha256": "db2abc8617b7d8db68615e42112700e5c9798479e890e1bd7b2b6195f7e493a7",
+      "request_id": "3470:5E6AD:7A5298:811E3E:6AC938B2"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.486205+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/content.json",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/content.json",
+      "sha256": "8e373d9d24d1f45adbca7ecf81989e9643dd474ee8e0a33ec6656f7b35bfa6cb",
+      "request_id": "95D8:265ADE:77B677:7E8248:6AC938B3"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.435645+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/styles.css",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/styles.css",
+      "sha256": "67e97b994ab49c352b1818a1eb1ba2db1f05c1225588c0a1da877b7473963d94",
+      "request_id": "3DC8:41E56:77741F:7E414D:6AC938B3"
+    },
+    {
+      "checked_at_utc": "2026-10-09T18:55:47.494516+00:00",
+      "url": "https://twk0672005.github.io/ta-writing-lab/favicon.svg",
+      "authentication": "anonymous",
+      "http_status": 200,
+      "final_url": "https://twk0672005.github.io/ta-writing-lab/favicon.svg",
+      "sha256": "1f3ff85a2502464e885c2302a8d9f35ba166e5ac10578735901f00456aff9c4f",
+      "request_id": "77E2:41E56:77743E:7E416C:6AC938B3"
+    }
+  ],
+  "failed_run": "https://github.com/twk0672005/ta-writing-lab/actions/runs/37378186254",
+  "failed_job": 111992815566,
+  "original_main_sha": "fa3beeeea13509a962e41620b8ae91c05ab799e1",
+  "observed_permissions": [
+    "contents:read",
+    "metadata:read",
+    "pages:write"
+  ],
+  "required_delete_permissions": [
+    "pages:write",
+    "administration:write"
+  ],
+  "historical_403_response_body_retained": false
+}

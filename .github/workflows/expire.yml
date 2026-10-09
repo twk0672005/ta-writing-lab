@@ -1,26 +1,39 @@
-name: Expire temporary practice site
+name: Verify or expire temporary Pages site
 on:
-  schedule:
-    - cron: '0 15 5 10 *'
+  # The one-time 2026 deadline has passed; do not leave an annual cron behind.
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Check the expiry without unpublishing'
+        description: 'Inspect configuration only (never PASS for unpublish)'
         required: true
         default: true
         type: boolean
+      verify_only:
+        description: 'Verify API + public HTTP + source preservation without DELETE'
+        required: true
+        default: false
+        type: boolean
 permissions:
   contents: read
-  pages: write
+  pages: read
+concurrency:
+  group: ta-writing-lab-pages-expiry
+  cancel-in-progress: false
 jobs:
   expire:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
-      - name: Read the approved repository code
+      - name: Read approved repository code
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
       - name: Verify or unpublish only this Pages site
         env:
           GH_TOKEN: ${{ github.token }}
-          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+          # Repository-scoped existing credential: Pages write + Administration write.
+          # Never silently fall back to GITHUB_TOKEN for DELETE.
+          PAGES_EXPIRY_TOKEN: ${{ secrets.PAGES_EXPIRY_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          VERIFY_ONLY: ${{ inputs.verify_only }}
         run: python scripts/expire_pages.py
